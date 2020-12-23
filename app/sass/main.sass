@@ -190,6 +190,7 @@ button
   font-weight: 500
   padding: 0 32px
   width: fit-content
+  transition: .3s ease
 
 .btn-accent
   box-shadow: 0 4px 8px rgba(181, 24, 39, 0.32), inset 0px -4px 8px rgba(231, 34, 52, 0.8)
@@ -201,11 +202,19 @@ button
     background: linear-gradient(180deg, #B51827 0%, #DD1528 100%)
 
 .btn-white
-  box-shadow: 0 0 4px rgba(192, 188, 181, 0.32), 0px 4px 8px rgba(129, 122, 108, 0.16)
+  box-shadow: 0 0 4px rgba(192, 188, 181, 0.32), 0 4px 8px rgba(129, 122, 108, 0.16)
+  background: #fff
 
   &:hover
     background: $accent
     color: #fff
+
+h1
+  width: 100%
+  text-align: center
+  margin: 0 auto 32px
+  font-size: 36px
+  font-weight: 500
 
 h2
   font-size: 35px
@@ -310,6 +319,10 @@ header
     a
       font-size: 12px
       color: #fff
+      &:hover
+        color: #333132
+    .active
+      color: #333132
 
 .phone-wrapper
   display: flex
@@ -340,6 +353,10 @@ header
       color: #333132
       display: flex
       align-items: center
+      &:hover
+        color: $accent
+    .current
+      color: $accent
 
   .svg-icon
     margin: 0 9.5px 0 0
@@ -440,6 +457,7 @@ header
       content: ''
       display: inline-block
       width: 4px
+      min-width: 4px
       height: 4px
       border-radius: 50%
       background: $accent
@@ -827,12 +845,13 @@ header
 
 //.consultation
 .consultation
+  padding: 48px 0
   &:before
     background: url("../img/decor-bg3.svg") no-repeat center top
       size: 100%
 
   h2
-    max-width: 544px
+    max-width: 415px
     width: 100%
 
   .container
@@ -988,6 +1007,228 @@ footer
     height: 1px
     background: $accent
 
+//pagination
+.pagination
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  margin: 0 auto 27px
+  li
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      color: #333132
+      font-size: 12px
+      .svg-icon
+        margin: 0 13px 0 0
+        width: 5px
+        height: 10px
+        fill: none
+        stroke: #000000
+      &:hover
+        color: $accent
+
+//.delivery
+.delivery
+  padding: 0 0 48px
+  .container
+    flex-direction: column
+    align-items: center
+
+.delivery-content
+  width: 100%
+  max-width: 592px
+  margin: 0 auto
+
+.delivery-box
+  margin: 0 0 24px
+  &:last-child
+    margin: 0
+  h3
+    margin: 0 0 16px
+    font-size: 24px
+    font-weight: 500
+  h4
+    font-size: 18px
+    font-weight: 500
+    margin: 0 0 16px
+  ul
+    li
+      width: 100%
+  .list-dots
+    margin: 0 0 16px
+    li
+      margin: 0 0 16px
+      align-items: flex-start
+      &:before
+        margin: 10px 10px 0 0
+
+      &:last-child
+        margin: 0
+
+//catalog-section
+.catalog-section
+  h2
+    text-align: center
+    margin: 0 auto 32px
+
+.list-number
+  counter-reset: item
+  li
+    margin: 0 0 16px
+    display: flex
+    align-items: flex-start
+    &:last-child
+      margin: 0
+    &:before
+      content: counters(item, ".") ". "
+      counter-increment: item
+      display: inline-block
+      margin: 0 10px 0 0
+
+//about
+.subtitle
+  margin: 0 auto 24px
+  max-width: 592px
+  width: 100%
+  font-size: 24px
+  font-weight: 500
+
+.img-wrapper
+  margin: 0 auto 24px
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 800px
+  width: 100%
+  max-height: 400px
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+//.dealers
+.dealers
+  .container
+    align-items: flex-start
+  h2
+    margin: 20px 0 0
+
+//partners
+.partners
+  .img-wrapper
+    max-height: 428px
+
+.mail
+  color: $accent
+  text-decoration: underline
+
+.phone-group
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+
+.phone-partners
+  color: #333132
+  margin: 0 5px 0 0
+  &:last-child
+    margin: 0
+  &:hover
+    color: $accent
+
+.list-contacts
+  li
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    margin: 0 0 8px
+    &:last-child
+      margin: 0
+    a
+      margin: 0 5px 0 0
+      &:last-child
+        margin: 0
+
+.dealers-box
+  margin: 32px 0 0
+  h3
+    font-size: 24px
+    font-weight: 600
+    margin: 0 0 16px
+
+.maps
+  width: 100%
+  max-width: 800px
+  margin: 32px auto 0
+  height: 400px
+  iframe
+    width: 100%
+    height: 100%
+
+.list-requisites
+  li
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin: 0 0 16px
+    &:last-child
+      margin: 0
+    p
+      color: #817A6C
+      min-width: 80px
+      margin: 0
+
+//news-section
+.news-section
+  padding: 0 0 48px
+
+.news-wrapper
+  max-width: 1008px
+  margin: 0 auto
+
+.btn-load
+  margin: 32px auto 0
+
+.news-box
+  width: 100%
+  margin: 0 0 32px
+  display: none
+  align-items: flex-start
+  flex-wrap: wrap
+  &:nth-child(-n+5)
+    display: flex
+  &:last-child
+    margin: 0
+
+.news-box__photo
+  width: 384px
+  height: 240px
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 100%
+    height: 1005px
+    object-fit: cover
+
+.news-box__content
+  width: calc(100% - 384px)
+  padding: 0 0 0 32px
+  .box-text
+    margin: 16px 0 0
+
+.news-box__title
+  color: #333132
+  font-size: 24px
+  font-weight: 500
+  margin: 0 0 8px
+  max-width: 592px
 
 @import "media"
 // Всегда в конце

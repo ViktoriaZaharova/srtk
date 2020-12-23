@@ -54,3 +54,32 @@ $('.btn-close').click(function (){
 $('.btn-burger').click(function (){
     $('.mobile-menu').fadeToggle();
 });
+
+// активная ссылка меню
+$('.menu li a').each(function () {
+    var location = window.location.href;
+    var link = this.href;
+    if (location == link) {
+        $(this).addClass('current');
+    }
+});
+
+$('.home-menu li a').each(function () {
+    var location = window.location.href;
+    var link = this.href;
+    if (location == link) {
+        $(this).addClass('active');
+    }
+});
+// end
+
+// load hidden block
+$('.btn-load').on('click', function (e) {
+    e.preventDefault();
+    $('.news-box:hidden').slice(0, 5).css('display', 'flex');
+
+    var onBlock = $('.news-box:hidden').length;
+    if(onBlock <= 0) {
+        $('.btn-load').hide();
+    }
+});
