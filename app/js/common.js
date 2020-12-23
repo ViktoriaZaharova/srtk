@@ -83,3 +83,6 @@ $('.btn-load').on('click', function (e) {
         $('.btn-load').hide();
     }
 });
+
+// input mask
+$('input[name="phone"]').mask('+7 (999) 999 - 99 - 99');
