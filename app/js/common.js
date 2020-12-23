@@ -102,5 +102,15 @@ $('.btn-load').on('click', function (e) {
     }
 });
 
+$('.btn-load-card').on('click', function (e) {
+    e.preventDefault();
+    $('.category-col:hidden').slice(0, 12).fadeIn();
+
+    var onBlock = $('.category-col:hidden').length;
+    if(onBlock <= 0) {
+        $('.btn-load-card').hide();
+    }
+});
+
 // input mask
 $('input[name="phone"]').mask('+7 (999) 999 - 99 - 99');

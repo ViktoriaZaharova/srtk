@@ -152,7 +152,7 @@ button
   padding: 0
   box-sizing: border-box
   cursor: pointer
-
+  font-family: $default-font
   &:focus
     box-shadow: none
 
@@ -1021,6 +1021,9 @@ footer
   margin: 0 auto 27px
 
   li
+    margin: 0 32px 0 0
+    &:last-child
+      margin: 0
     a
       display: flex
       align-items: center
@@ -1316,25 +1319,54 @@ footer
   .wrapper-row
     width: calc(100% - 336px)
     padding: 0 0 0 32px
-    justify-content: space-between
   h3
     font-size: 24px
     margin: 0 0 16px
   .news-card
     margin: 0 0 32px
+    width: 100%
 
 .catalog-wrapper__content
   max-width: 336px
   width: 100%
 
+.col-3
+  width: 33.3%
+  padding: 0 8px
+
+.col-4
+  width: 25%
+  padding: 0 8px
 
 .wrapper-row
   display: flex
-  align-items: stretch
+  align-items: flex-start
   flex-wrap: wrap
   width: 100%
 
+.row
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  margin: 0 -8px
 
+//category-section
+.category-section
+  padding: 0 0 48px
+  .news-card
+    margin: 0 auto 16px
+  .container
+    padding: 0 110px
+
+.btn-load-card
+  margin: 16px auto 0
+  
+.category-col
+  display: none
+  &:nth-child(-n+16)
+    display: block
+  .news-card
+    width: 100%
 
 @import "media"
 // Всегда в конце

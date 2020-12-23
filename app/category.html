@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>SRTK</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.svg" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+    <div class="btn-close"></div>
+
+    <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+    <ul class="menu">
+        <li><a href="catalog.html">Каталог товаров</a></li>
+        <li>
+            <a href="#">
+                <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+                Поиск по марке
+            </a>
+        </li>
+        <li><a href="delivery.html">Оплата и доставка</a></li>
+        <li><a href="return.html">Возврат и замена</a></li>
+    </ul>
+
+    <ul class="home-menu">
+        <li><a href="about.html">О компании</a></li>
+        <li><a href="news.html">Новости и статьи</a></li>
+        <li><a href="partners.html">Партнерам</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+
+    <ul class="list-social">
+        <li><a href="#">
+            <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#social-1"></use>
+            </svg>
+        </a></li>
+        <li><a href="#">
+            <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#social-2"></use>
+            </svg>
+        </a></li>
+        <li><a href="#">
+            <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#social-3"></use>
+            </svg>
+        </a></li>
+        <li><a href="#">
+            <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#social-4"></use>
+            </svg>
+        </a></li>
+    </ul>
+</div>
+
+<header>
+    <div class="header-top">
+        <div class="container">
+
+            <div class="location header-box">
+                <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#location"></use>
+                </svg>
+                <div class="location-text">Москва и Московская…</div>
+            </div>
+
+            <ul class="home-menu">
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="news.html">Новости и статьи</a></li>
+                <li><a href="partners.html">Партнерам</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+
+            <div class="phone-wrapper">
+                <a href="tel:+78342271043" class="phone links header-box">
+                    <svg class="phone-icon svg-icon">
+                        <use xlink:href="img/sprite.svg#phone"></use>
+                    </svg>
+                    <span class="links-text">+7 (8342) 27-10-43</span>
+                </a>
+
+                <a href="#" class="links-call links">Обратный звонок</a>
+            </div>
+
+            <ul class="list-social">
+                <li><a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#social-1"></use>
+                    </svg>
+                </a></li>
+                <li><a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#social-2"></use>
+                    </svg>
+                </a></li>
+                <li><a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#social-3"></use>
+                    </svg>
+                </a></li>
+                <li><a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#social-4"></use>
+                    </svg>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header-bottom">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+            <ul class="menu">
+                <li><a href="catalog.html">Каталог товаров</a></li>
+                <li>
+                    <a href="#">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#search"></use>
+                        </svg>
+                        Поиск по марке
+                    </a>
+                </li>
+                <li><a href="delivery.html">Оплата и доставка</a></li>
+                <li><a href="return.html">Возврат и замена</a></li>
+            </ul>
+
+            <a href="#" class="links">
+                <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#entrance"></use>
+                </svg>
+                <span class="links-text">Вход и регистрация</span>
+            </a>
+
+            <a href="basket.html" class="links links-basket">
+                <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#basket"></use>
+                </svg>
+                <span class="links-text">Корзина</span>
+            </a>
+
+            <div class="btn-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="catalog">
+    <div class="container">
+        <ul class="pagination">
+            <li>
+                <a href="index.html">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#arrow-left"></use>
+                    </svg>
+                    <span class="links-text">На главную</span>
+                </a>
+            </li>
+            <li><a href="catalog.html">
+                <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-left"></use>
+                </svg>
+                <span class="links-text">В каталог</span>
+            </a></li>
+        </ul>
+
+        <h1>Автомобильные резиновые коврики
+            3D Standart</h1>
+
+        <form method="post" class="form-sorting">
+            <label>
+                <select name="select" class="select">
+                    <option value="Все марки">Все марки</option>
+                </select>
+            </label>
+            <label>
+                <select name="select" class="select" disabled>
+                    <option value="Все марки">Все модели</option>
+                </select>
+            </label>
+            <label>
+                <select name="select" class="select" disabled>
+                    <option value="Все марки">Любое поколение</option>
+                </select>
+            </label>
+            <button type="submit" class="btn btn-accent" disabled>Показать</button>
+        </form>
+
+    </div>
+</section>
+
+<div class="category-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod4.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod5.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod6.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod7.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod4.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod5.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod6.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod7.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod4.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod5.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod6.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod7.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod4.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod5.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod6.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod7.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod4.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod5.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod6.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod7.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod4.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod5.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod6.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 category-col">
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/prod7.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02) (2018-)
+                            передние</a>
+                        <div class="price-wrapper">
+                            <div class="new-price">6 000 ₽</div>
+                            <div class="old-price">12 000 ₽</div>
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn-load-card btn btn-white">Показать ещё 12 из 35</button>
+    </div>
+</div>
+
+<div class="catalog-wrapper">
+    <div class="container">
+        <div class="catalog-wrapper__content">
+            <h3>Автомобильные резиновые коврики
+                3D Premium</h3>
+            <div class="box-text">
+                <p>По форме они идеально вписываются
+                    в салон автомобиля. В продукции СРТК предусмотрено наличие бортиков, благодаря чему салон надежно
+                    защищен от попадания в него влаги.</p>
+
+                <p>Кроме того, специальный рисунок поверхности способствует наиболее простому очищению ковриков. Имеются
+                    и
+                    узоры с внутренней стороны, благодаря которым коврик надежно фиксируется на поверхности.</p>
+            </div>
+        </div>
+
+        <div class="wrapper-row">
+            <div class="row">
+                <div class="col-3">
+                    <div class="news-card">
+                        <span class="tag bg-green">Новинка</span>
+                        <a href="product.html" class="news-card__img">
+                            <img src="img/news4.png" alt="">
+                        </a>
+
+                        <div class="news-card__body">
+                            <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02)
+                                (2018-)
+                                передние</a>
+                            <div class="price-wrapper">
+                                12 000 ₽
+                            </div>
+                            <ul class="list-check">
+                                <li>В наличии</li>
+                                <li>Есть комплект</li>
+                            </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-add-card">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#basket"></use>
+                            </svg>
+                            <span class="btn-text">Добавить в корзину</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="news-card">
+                        <span class="tag bg-red">Акция</span>
+                        <a href="product.html" class="news-card__img">
+                            <img src="img/news2.png" alt="">
+                        </a>
+
+                        <div class="news-card__body">
+                            <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02)
+                                (2018-)
+                                передние</a>
+                            <div class="price-wrapper">
+                                <div class="new-price">6 000 ₽</div>
+                                <div class="old-price">12 000 ₽</div>
+                            </div>
+                            <ul class="list-check">
+                                <li>В наличии</li>
+                                <li>Есть комплект</li>
+                            </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-add-card">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#basket"></use>
+                            </svg>
+                            <span class="btn-text">Добавить в корзину</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="news-card">
+                        <span class="tag bg-red">Акция</span>
+                        <a href="product.html" class="news-card__img">
+                            <img src="img/news5.png" alt="">
+                        </a>
+
+                        <div class="news-card__body">
+                            <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02)
+                                (2018-)
+                                передние</a>
+                            <div class="price-wrapper">
+                                <div class="new-price">6 000 ₽</div>
+                                <div class="old-price">12 000 ₽</div>
+                            </div>
+                            <ul class="list-check">
+                                <li>В наличии</li>
+                                <li>Есть комплект</li>
+                            </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-add-card">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#basket"></use>
+                            </svg>
+                            <span class="btn-text">Добавить в корзину</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-100 line-wrapper">
+                <a href="category.html" class="btn btn-white">Посмотреть все коврики 3D Premium</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="catalog-wrapper">
+    <div class="container">
+        <div class="catalog-wrapper__content">
+            <h3>Автомобильные резиновые коврики
+                3D Lux</h3>
+            <div class="box-text">
+                <p>По форме они идеально вписываются
+                    в салон автомобиля. В продукции СРТК предусмотрено наличие бортиков, благодаря чему салон надежно
+                    защищен от попадания в него влаги.</p>
+
+                <p>Кроме того, специальный рисунок поверхности способствует наиболее простому очищению ковриков. Имеются
+                    и
+                    узоры с внутренней стороны, благодаря которым коврик надежно фиксируется на поверхности.</p>
+            </div>
+        </div>
+
+        <div class="wrapper-row">
+            <div class="row">
+                <div class="col-3">
+                    <div class="news-card">
+                        <span class="tag bg-green">Новинка</span>
+                        <a href="product.html" class="news-card__img">
+                            <img src="img/news4.png" alt="">
+                        </a>
+
+                        <div class="news-card__body">
+                            <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02)
+                                (2018-)
+                                передние</a>
+                            <div class="price-wrapper">
+                                12 000 ₽
+                            </div>
+                            <ul class="list-check">
+                                <li>В наличии</li>
+                                <li>Есть комплект</li>
+                            </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-add-card">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#basket"></use>
+                            </svg>
+                            <span class="btn-text">Добавить в корзину</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="news-card">
+                        <span class="tag bg-red">Акция</span>
+                        <a href="product.html" class="news-card__img">
+                            <img src="img/news2.png" alt="">
+                        </a>
+
+                        <div class="news-card__body">
+                            <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02)
+                                (2018-)
+                                передние</a>
+                            <div class="price-wrapper">
+                                <div class="new-price">6 000 ₽</div>
+                                <div class="old-price">12 000 ₽</div>
+                            </div>
+                            <ul class="list-check">
+                                <li>В наличии</li>
+                                <li>Есть комплект</li>
+                            </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-add-card">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#basket"></use>
+                            </svg>
+                            <span class="btn-text">Добавить в корзину</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="news-card">
+                        <span class="tag bg-red">Акция</span>
+                        <a href="product.html" class="news-card__img">
+                            <img src="img/news5.png" alt="">
+                        </a>
+
+                        <div class="news-card__body">
+                            <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02)
+                                (2018-)
+                                передние</a>
+                            <div class="price-wrapper">
+                                <div class="new-price">6 000 ₽</div>
+                                <div class="old-price">12 000 ₽</div>
+                            </div>
+                            <ul class="list-check">
+                                <li>В наличии</li>
+                                <li>Есть комплект</li>
+                            </ul>
+                        </div>
+
+                        <a href="#" class="btn btn-add-card">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#basket"></use>
+                            </svg>
+                            <span class="btn-text">Добавить в корзину</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-100 line-wrapper">
+                <a href="category.html" class="btn btn-white">Посмотреть все коврики 3D Lux</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section class="consultation">
+    <div class="container">
+        <h2>Проконсультируем
+            и поможем подобрать товар</h2>
+
+        <form method="post" class="form">
+            <label><input type="text" placeholder="Ваше имя" name="name"></label>
+            <label><input type="text" placeholder="Номер телефона" name="phone" required></label>
+            <label><input type="text" placeholder="Кратко опишите проблему или ваше пожелание" name="message"></label>
+
+            <button type="submit" class="btn btn-accent">Заказать консультацию</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-box">
+            <h3>Компания</h3>
+            <ul class="footer-menu">
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="news.html">Новости и статьи</a></li>
+                <li><a href="partners.html">Партнерам</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="delivery.html">Оплата и доставка</a></li>
+                <li><a href="return.html">Возврат и замена</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Каталог товаров</h3>
+            <ul class="footer-menu">
+                <li><a href="category.html">Автомобильные резиновые коврики 3D Standart</a></li>
+                <li><a href="category.html">Автомобильные резиновые коврики 3D Premium</a></li>
+                <li><a href="category.html">Автомобильные резиновые коврики 3D Lux</a></li>
+                <li><a href="category.html">Брызговики и локеры</a></li>
+                <li><a href="category.html">Поддоны и ковры багажника</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Социальные сети</h3>
+            <ul class="list-social">
+                <li><a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#social-2"></use>
+                    </svg>
+                    Drive2
+                </a></li>
+                <li><a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#social-3"></use>
+                    </svg>
+                    Вконтакте
+                </a></li>
+                <li><a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#social-4"></use>
+                    </svg>
+                    Instagram
+                </a></li>
+                <li><a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#social-1"></use>
+                    </svg>
+                    YouTube
+                </a></li>
+            </ul>
+        </div>
+        <div class="footer-box">
+            <a href="tel:+78342271043" class="phone links header-box">
+                <svg class="phone-icon svg-icon">
+                    <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+                <span class="links-text">+7 (8342) 27-10-43</span>
+            </a>
+
+            <a href="#" class="btn btn-white">Заказать обратный звонок</a>
+
+            <a href="#" class="developer"><img src="img/developer.svg" alt=""></a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+
+</html>
