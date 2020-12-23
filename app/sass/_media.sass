@@ -4,52 +4,239 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+  .home-menu li, .menu li, header .list-social li
+    margin: 0 15px 0 0
 
+  .links-basket
+    margin: 0 0 0 15px
+
+  .category-links
+    font-size: 30px
+
+  .list-mark
+    justify-content: flex-start
+    li
+      width: 20%
+      margin: 0 0 5px
+      img
+        max-width: 48px
+        margin: 0 auto
+
+  .news-slider, .gallery-clients-slider
+    padding: 0 30px
+
+  .gallery-clients__box
+    max-width: 95%
+
+  .form
+    max-width: 450px
+
+  .consultation h2
+    max-width: none
+    width: calc(100% - 450px)
+    padding: 0 30px 0 0
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+  .menu, .header-bottom
+    font-size: 12px
+
+  .header-top .links-call
+    display: none
+
+  .logo
+    max-width: 80px
+
+  .category-box__content
+    padding: 20px
+
+  .category-links
+    font-size: 24px
+
+  .col
+    max-width: 320px
+
+  .category-box
+    width: calc(100% - 340px)
+
+  .category-box__min
+    width: 100%
+
+  .select-brand h2
+    padding: 0
+    margin: 0 0 20px
+
+  .form-selected
+    max-width: 450px
+
+  .select-brand__box
+    width: calc(100% - 450px)
+
+  h2
+    font-size: 26px
+
+  .box-text
+    font-size: 14px
+
+  .about-articles__box
+    padding: 20px 25px
+    .btn
+      margin: 20px 0 0
+
+  .articles-item
+    margin: 0 0 15px
+
+  .articles-item__name
+    font-size: 14px
+
+  .btn
+    font-size: 14px
+    padding: 0 16px
+
+  .btn-grey
+    height: 42px
 
 
 /* Small Devices, Tablets */
+@media only screen and (max-width : 850px)
+  header .home-menu, header .menu
+    display: none
+
+  .btn-burger
+    display: flex
+
+  .logo
+    margin: 0 auto 0 0
+
+  .form-selected
+    max-width: 400px
+
+  .select-brand__box
+    width: calc(100% - 400px)
+
+  footer
+    .footer-box
+      width: 50%
+      margin: 0 0 20px
+      &:nth-child(2)
+        h3
+          text-align: right
+        .footer-menu
+          text-align: right
+    .btn
+      margin: 0 0 0 auto
+
+  .developer
+    margin: 20px 0 0
+
+
 @media only screen and (max-width : 768px)
-	/**/
+  .category-box
+    width: 100%
+    max-height: 320px
 
+  .col
+    max-width: none
+    height: auto
+
+  .category-box__min .category-box__content
+    padding: 20px
+
+  .form-selected
+    max-width: 100%
+    margin: 20px 0 0
+
+  .select-brand__box
+    width: 100%
+
+  .decor-bg
+    padding: 30px 0
+
+  .about-articles__box
+    width: 100%
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
+
+  .btn
+    height: 40px
+
+  .gallery-clients__box-img
+    height: 250px
+
+  .gallery-clients__box-body
+    padding: 20px
+
+  .form
+    max-width: none
+
+  .consultation h2
+    width: 100%
+    padding: 0
+    margin: 0 auto 30px
+    text-align: center
+
+  input
+    font-size: 14px
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width : 575px)
+  .category-links
+    font-size: 20px
+
+  .category-box__content .list-dots
+    font-size: 14px
+
+  .gallery-clients__box
+    max-width: 90%
+
+  .gallery-clients-slider
+    padding: 0
+
 @media only screen and (max-width : 480px)
-	/**/
+  header
+    .list-social
+      display: none
 
+  .form-group label
+    width: 100%
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+  select
+    font-size: 14px
+    padding: 0 14px
 
+@media only screen and (max-width : 420px)
+  .header-bottom
+    .links-text
+      display: none
+    .links
+      .svg-icon
+        width: 20px
+        height: 20px
+        margin: 0
 
-/*==========  Mobile First  ==========*/
+  .header-top
+    font-size: 11px
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
+  .header-box .svg-icon
+    width: 14px
+    height: 14px
 
+  .news-slider
+    padding: 0 10px
+    
+  footer
+    padding: 30px 0
+    .footer-box
+      width: 100%
+      &:nth-child(2)
+        h3, .footer-menu
+          text-align: left
+    .phone
+      justify-content: flex-start
+    .btn
+      margin: 0
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
-
+  .developer
+    img
+      margin: 0

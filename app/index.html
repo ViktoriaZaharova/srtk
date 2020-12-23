@@ -27,9 +27,60 @@
 
 <body>
 
+<div class="mobile-menu">
+    <div class="btn-close"></div>
+
+    <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+    <ul class="menu">
+        <li><a href="#">Каталог товаров</a></li>
+        <li>
+            <a href="#">
+                <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+                Поиск по марке
+            </a>
+        </li>
+        <li><a href="#">Оплата и доставка</a></li>
+        <li><a href="#">Возврат и замена</a></li>
+    </ul>
+
+    <ul class="home-menu">
+        <li><a href="about.html">О компании</a></li>
+        <li><a href="news.html">Новости и статьи</a></li>
+        <li><a href="partners.html">Партнерам</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+
+    <ul class="list-social">
+        <li><a href="#">
+            <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#social-1"></use>
+            </svg>
+        </a></li>
+        <li><a href="#">
+            <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#social-2"></use>
+            </svg>
+        </a></li>
+        <li><a href="#">
+            <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#social-3"></use>
+            </svg>
+        </a></li>
+        <li><a href="#">
+            <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#social-4"></use>
+            </svg>
+        </a></li>
+    </ul>
+</div>
+
 <header>
     <div class="header-top">
         <div class="container">
+
             <div class="location header-box">
                 <svg class="svg-icon">
                     <use xlink:href="img/sprite.svg#location"></use>
@@ -111,6 +162,12 @@
                 </svg>
                 <span class="links-text">Корзина</span>
             </a>
+
+            <div class="btn-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </div>
 </header>

@@ -111,6 +111,7 @@ input
   color: #C0BCB5
   font-size: 16px
   font-weight: 500
+
   &::placeholder
     color: #C0BCB5
 
@@ -129,11 +130,12 @@ select
 
 .label-select
   position: relative
+
   &:after
     content: ''
     position: absolute
     top: 50%
-    transform: translate(0,-50%)
+    transform: translate(0, -50%)
     background: url("../img/select-arrow.svg") no-repeat center
       size: 10px
     width: 10px
@@ -156,6 +158,7 @@ button
   padding: 0
   box-sizing: border-box
   cursor: pointer
+
   &:focus
     box-shadow: none
 
@@ -193,11 +196,13 @@ button
   background: linear-gradient(180deg, #DD1528 0%, #B51827 100%)
   color: #fff
   text-shadow: 0 1px 0 rgba(74, 0, 0, 0.4)
+
   &:hover
     background: linear-gradient(180deg, #B51827 0%, #DD1528 100%)
 
 .btn-white
   box-shadow: 0 0 4px rgba(192, 188, 181, 0.32), 0px 4px 8px rgba(129, 122, 108, 0.16)
+
   &:hover
     background: $accent
     color: #fff
@@ -210,6 +215,11 @@ h2
 .bg-grey
   background: #F6F6F5
 
+.logo
+  display: flex
+  align-items: center
+  justify-content: center
+
 //header
 header
   box-shadow: 0 0 24px rgba(129, 122, 108, 0.32)
@@ -220,10 +230,12 @@ header
   background: $brown
   color: #fff
   font-size: 12px
+
   .container
     align-items: center
     justify-content: space-between
     min-height: 48px
+
   .links
     color: #fff
 
@@ -238,12 +250,15 @@ header
   box-shadow: 0 0 24px rgba(129, 122, 108, 0.32)
   background: #fff
   padding: 16px 0
+  font-size: 14px
   .container
     align-items: center
+
   .links
     color: #333132
     display: flex
     align-items: center
+
     .svg-icon
       width: 12px
       height: 14px
@@ -274,6 +289,7 @@ header
       justify-content: flex-start
       color: #C0BCB5
       font-size: 12px
+
       svg
         width: 16px
         height: 16px
@@ -303,7 +319,9 @@ header
 .phone
   display: flex
   align-items: center
-  margin: 0 20px 0 0
+
+.links-call
+  margin: 0 0 0 20px
 
 .menu
   display: flex
@@ -311,14 +329,18 @@ header
   flex-wrap: wrap
   font-size: 14px
   margin: 0 auto
+
   li
     margin: 0 32px 0 0
+
     &:last-child
       margin: 0
+
     a
       color: #333132
       display: flex
       align-items: center
+
   .svg-icon
     margin: 0 9.5px 0 0
     fill: #817A6C
@@ -327,6 +349,7 @@ header
 
 .links-basket
   margin: 0 0 0 32px
+
   .svg-icon
     fill: #817A6C
     width: 14px
@@ -336,31 +359,31 @@ header
 .form-search
   display: flex
   align-items: center
+
   button
     width: 12.5px
     height: 12.5px
     background: transparent
     margin: 0 9px 0 0
+
   input
     border: none
     width: 125px
     font-size: 14px
     color: #333132
+
     &::placeholder
       color: #333132
 
 //main
-main
-  .col
-    max-width: 384px
-    width: 100%
-
 .col
   display: flex
   flex-direction: column
   height: 100%
   justify-content: space-between
   margin: 0 0 0 auto
+  max-width: 384px
+  width: 100%
 
 .category-box
   width: calc(100% - 416px)
@@ -368,6 +391,7 @@ main
   max-height: 400px
   overflow: hidden
   margin: 0 0 32px
+
   &:before
     content: ''
     width: 100%
@@ -393,6 +417,7 @@ main
   bottom: 0
   width: 100%
   padding: 32px 48px
+
   .list-dots
     color: #fff
     margin: 16px 0 0
@@ -402,12 +427,15 @@ main
   display: flex
   align-items: center
   flex-wrap: wrap
+
   li
     margin: 0 16px 0 0
     display: flex
     align-items: center
+
     &:last-child
       margin: 0
+
     &:before
       content: ''
       display: inline-block
@@ -420,10 +448,13 @@ main
 .category-box__min
   width: 100%
   max-height: 184px
+
   &:before
     height: 96px
+
   .category-links
     font-size: 16px
+
   .category-box__content
     padding: 32px 24px
 
@@ -436,6 +467,7 @@ main
 .decor-bg
   position: relative
   padding: 48px 0
+
   &:before
     content: ''
     position: absolute
@@ -443,9 +475,10 @@ main
     top: 0
     width: 100%
     height: 260px
-    background: url("../img/decor-bg1.svg") no-repeat center
+    background: url("../img/decor-bg1.svg") no-repeat center top
       size: 100%
     z-index: 1
+
   .container
     align-items: flex-start
     justify-content: space-between
@@ -461,6 +494,7 @@ main
   align-items: flex-start
   justify-content: space-between
   flex-wrap: wrap
+
   label
     width: 49%
 
@@ -476,19 +510,23 @@ main
   justify-content: space-between
   position: relative
   opacity: .3
+
   &:before, &:after
     content: ''
     position: absolute
     width: 104px
     height: 100%
     top: 50%
-    transform: translate(0,-50%)
+    transform: translate(0, -50%)
+
   &:before
     left: 0
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%)
+
   &:after
     right: 0
-    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%)
+
   li
     width: 48px
     height: 48px
@@ -500,6 +538,7 @@ main
 .news
   position: relative
   padding: 32px 0
+
   h2
     text-align: center
 
@@ -529,6 +568,7 @@ main
   display: flex
   align-items: center
   justify-content: center
+
   &:after
     content: ''
     position: absolute
@@ -545,6 +585,7 @@ main
 .bg-green
   background: #02D656
   color: #333132
+
   &:after
     border-top-color: #02D656
 
@@ -555,6 +596,7 @@ main
   display: flex
   align-items: center
   justify-content: center
+
   img
     width: 100%
     height: 100%
@@ -590,13 +632,16 @@ main
   display: flex
   flex-wrap: wrap
   align-items: center
+
   li
     margin: 0 8px 0 0
     position: relative
     display: flex
     align-items: center
+
     &:last-child
       margin: 0
+
     &:before
       content: ''
       width: 11px
@@ -615,8 +660,10 @@ main
   border-top: 1px solid #E4E5E6
   color: #333132
   font-size: 12px
+
   &:hover
     color: $accent
+
   .svg-icon
     margin: 0 9px 0 0
     width: 14px
@@ -634,12 +681,15 @@ main
   opacity: 1
   width: 13.5px
   height: 27px
+
   svg
     width: 100%
     height: 100%
     stroke: #B51827
+
   &:before
     display: none
+
   &:hover
     svg
       stroke: #C0BCB5
@@ -648,8 +698,10 @@ main
 .about-articles
   padding: 32px 0
   position: relative
+
   .container
     justify-content: space-between
+
   &:before
     content: ''
     position: absolute
@@ -660,6 +712,7 @@ main
     background: url("../img/decor-bg2.svg") no-repeat center
       size: 100%
     transform: rotate(-180deg)
+
   &:after
     content: ''
     position: absolute
@@ -675,15 +728,19 @@ main
   background: #fff
   border: 4px solid #817A6C
   padding: 32px 48px 48px
+
   h2
     margin: 0 0 24px
+
   .btn
     margin: 32px 0 0
 
 .box-text
   line-height: 24px
+
   p
     margin: 0 0 20px
+
     &:last-child
       margin: 0
 
@@ -694,6 +751,7 @@ main
 
 .articles-item
   margin: 0 0 30px
+
   &:last-child
     margin: 0
 
@@ -720,6 +778,7 @@ main
   align-items: center
   color: #817A6C
   font-size: 12px
+
   .svg-icon
     width: 12px
     height: 11px
@@ -732,6 +791,7 @@ main
 //gallery-clients
 .gallery-clients
   padding: 32px 0
+
   h2
     text-align: center
     margin: 0 auto 32px
@@ -746,6 +806,7 @@ main
 .gallery-clients__box-img
   width: 100%
   height: 330px
+
   img
     width: 100%
     height: 100%
@@ -767,11 +828,13 @@ main
 //.consultation
 .consultation
   &:before
-    background: url("../img/decor-bg3.svg") no-repeat center
+    background: url("../img/decor-bg3.svg") no-repeat center top
       size: 100%
+
   h2
     max-width: 544px
     width: 100%
+
   .container
     align-items: center
     justify-content: space-between
@@ -787,22 +850,27 @@ footer
   background-blend-mode: multiply
   position: relative
   padding: 32px 0 80px
+
   .container
     justify-content: space-between
+
   .phone
     justify-content: flex-end
     color: #fff
     font-size: 16px
     font-weight: 500
     margin: 0 0 16px
+
     .svg-icon
       fill: #817A6C
 
   .list-social
     flex-direction: column
     align-items: flex-start
+
     li
       margin: 0 0 8px
+
       a
         .svg-icon
           margin: 0 8px 0 0
@@ -818,6 +886,7 @@ footer
 .footer-menu
   font-size: 12px
   line-height: 24px
+
   li
     a
       color: #C0BCB5
@@ -830,8 +899,95 @@ footer
 
 .developer
   margin: 32px 0 0
+
   img
     margin: 0 0 0 auto
+
+//mobile-menu
+.mobile-menu
+  display: none
+  position: fixed
+  left: 0
+  top: 0
+  max-width: 280px
+  width: 100%
+  background: #ffff
+  height: 100%
+  overflow-y: auto
+  z-index: 7
+  box-shadow: 0 2px 4px rgba(129, 122, 108, 0.16), 0 0 24px rgba(129, 122, 108, 0.16)
+  padding: 30px 20px
+
+  .logo
+    margin: 0 auto 30px
+
+  .menu
+    li
+      margin: 0 0 10px
+
+      a
+        &:hover
+          color: $accent
+
+  .home-menu
+    margin: 10px 0
+    padding: 10px 0
+    border:
+      top: 1px solid $brown
+      bottom: 1px solid $brown
+
+    li
+      width: 100%
+      margin: 0 0 10px
+
+      a
+        font-size: 14px
+        color: $brown
+
+        &:hover
+          color: $accent
+  .list-social
+    .svg-icon
+      fill: $brown
+
+
+
+.btn-close
+  position: relative
+  width: 20px
+  height: 20px
+  cursor: pointer
+  margin: 0 0 20px auto
+
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 10px
+    top: 0
+    width: 1px
+    height: 100%
+    background: $accent
+
+  &:before
+    transform: rotate(45deg)
+
+  &:after
+    transform: rotate(135deg)
+
+.btn-burger
+  display: none
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  width: 20px
+  height: 14px
+  cursor: pointer
+  margin: 0 0 0 10px
+  span
+    width: 100%
+    height: 1px
+    background: $accent
+
 
 @import "media"
 // Всегда в конце
