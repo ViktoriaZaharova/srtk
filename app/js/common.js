@@ -64,12 +64,63 @@ $('.article-gallery__slider').slick({
     ]
 });
 
-// mobile menu
-$('.btn-close').click(function (){
-   $('.mobile-menu').fadeOut();
+$('.product-slider-max').slick({
+    slidesToShow: 1,
+    asNavFor: '.product-slider-min',
+    fade: true,
+    arrows: false,
 });
 
-$('.btn-burger').click(function (){
+$(".product-slider-min").slick({
+    slidesToShow: 4,
+    asNavFor: '.product-slider-max',
+    focusOnSelect: true,
+    prevArrow: '<button type="button" class="slick-prev"><svg width="16" height="29" viewBox="0 0 16 29" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+        '<path d="M14.5 1L1 14.5L14.5 28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>\n' +
+        '</svg>\n</button>',
+    nextArrow: '<button type="button" class="slick-next"><svg width="16" height="29" viewBox="0 0 16 29" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+        '<path d="M1.5 28L15 14.5L1.5 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>\n' +
+        '</svg>\n</button>',
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 850,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4,
+            }
+        },
+        {
+            breakpoint: 650,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 2,
+            }
+        }
+    ]
+});
+
+// mobile menu
+$('.btn-close').click(function () {
+    $('.mobile-menu').fadeOut();
+});
+
+$('.btn-burger').click(function () {
     $('.mobile-menu').fadeToggle();
 });
 
@@ -97,7 +148,7 @@ $('.btn-load').on('click', function (e) {
     $('.news-box:hidden').slice(0, 5).css('display', 'flex');
 
     var onBlock = $('.news-box:hidden').length;
-    if(onBlock <= 0) {
+    if (onBlock <= 0) {
         $('.btn-load').hide();
     }
 });
@@ -107,7 +158,7 @@ $('.btn-load-card').on('click', function (e) {
     $('.category-col:hidden').slice(0, 12).fadeIn();
 
     var onBlock = $('.category-col:hidden').length;
-    if(onBlock <= 0) {
+    if (onBlock <= 0) {
         $('.btn-load-card').hide();
     }
 });

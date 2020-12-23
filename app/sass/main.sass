@@ -153,6 +153,7 @@ button
   box-sizing: border-box
   cursor: pointer
   font-family: $default-font
+
   &:focus
     box-shadow: none
 
@@ -1022,8 +1023,10 @@ footer
 
   li
     margin: 0 32px 0 0
+
     &:last-child
       margin: 0
+
     a
       display: flex
       align-items: center
@@ -1298,11 +1301,14 @@ footer
   align-items: flex-start
   flex-wrap: wrap
   justify-content: center
+
   label
     margin: 0 16px 32px 0
     width: 264px
+
   select
     background-position: 94% center
+
   button
     margin: 0 0 32px
     max-width: 142px
@@ -1314,14 +1320,18 @@ footer
   width: 100%
   background: url("../img/decor-bg4.svg") no-repeat center
     size: 100%
+
   .container
     padding: 0 65px
+
   .wrapper-row
     width: calc(100% - 336px)
     padding: 0 0 0 32px
+
   h3
     font-size: 24px
     margin: 0 0 16px
+
   .news-card
     margin: 0 0 32px
     width: 100%
@@ -1353,20 +1363,203 @@ footer
 //category-section
 .category-section
   padding: 0 0 48px
+
   .news-card
     margin: 0 auto 16px
+
   .container
     padding: 0 110px
 
 .btn-load-card
   margin: 16px auto 0
-  
+
 .category-col
   display: none
+
   &:nth-child(-n+16)
     display: block
+
   .news-card
     width: 100%
+
+//.product
+.product
+  padding: 0 0 48px
+
+.product-wrapper
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.product-photo
+  width: calc(100% - 379px)
+  padding: 0 32px 0 0
+
+.product-slider-max__item
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  height: 400px
+  overflow: hidden
+
+.photo-max
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+.product-slider-max__schema
+  position: absolute
+  left: 0
+  top: 0
+  height: 100%
+  background: rgba(#333132, .8)
+  max-width: 176px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+.product-slider-min
+  margin: 8px 0 0
+  padding: 0 148px
+  box-sizing: border-box
+
+  .slick-current
+    .product-slider-min__item
+      &:before
+        border-color: $accent
+
+.product-slider-min__item
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 120px
+  height: 80px
+  overflow: hidden
+  transition: .3s ease
+  position: relative
+  margin: 0 auto
+  cursor: pointer
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    border: 4px solid transparent
+    transition: .3s ease
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.product-information
+  width: 379px
+
+  .price-wrapper
+    align-items: flex-start
+    font-size: 36px
+
+  .old-price
+    text-decoration: none
+    margin: 5px 0 0 16px
+
+  .list-check
+    color: #817A6C
+
+  .btn
+    margin: 16px 0 28px
+    width: 100%
+
+.list-characteristics
+  width: 100%
+  line-height: 24px
+  margin: 0 0 24px
+
+  li
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+
+    p
+      color: #817A6C
+      min-width: 140px
+
+.links-red
+  color: $accent
+
+.product-info-box
+  margin: 0 0 24px
+
+  &:last-child
+    margin: 0
+
+  h3
+    font-size: 24px
+    font-weight: 500
+    margin: 0 0 16px
+
+  .location
+    color: $accent
+
+    .svg-icon
+      fill: $accent
+
+  h4
+    margin: 0 0 4px
+    font-size: 18px
+    font-weight: 500
+
+.product-info-box__line
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  font-size: 12px
+  margin: 0 0 4px
+
+  span
+    margin: 0 8px 0 0
+    color: $brown
+
+.img-pay
+  border: 1px solid #C0BCB5
+    radius: 4px
+  max-width: 180px
+  width: 100%
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 16px 0 0
+
+.product-info-box-delivery
+  margin: 32px 0 0
+
+  &:last-child
+    margin: 32px 0 0
+
+//.other-goods
+.other-goods
+  background: url("../img/decor-bg5.svg") no-repeat center
+    size: 100%
+  padding: 32px 0 0
+
+  h2
+    text-align: center
+
+.other-goods-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  flex-wrap: wrap
+  .news-card
+    margin: 32px 12px 0
 
 @import "media"
 // Всегда в конце
