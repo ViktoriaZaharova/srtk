@@ -3,6 +3,10 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1230px)
+  .catalog-wrapper .container
+    padding: 0 15px
+
 @media only screen and (max-width : 1200px)
   .home-menu li, .menu li, header .list-social li
     margin: 0 15px 0 0
@@ -28,9 +32,22 @@
   .gallery-clients__box
     max-width: 95%
 
+  .catalog-wrapper__content
+    max-width: 300px
 
+  .catalog-wrapper .wrapper-row
+    width: calc(100% - 300px)
 
 /* Medium Devices, Desktops */
+@media only screen and (max-width : 1100px)
+  .catalog-wrapper__content
+    margin: 0 0 20px
+    max-width: none
+
+  .catalog-wrapper .wrapper-row
+    width: 100%
+    padding: 0
+
 @media only screen and (max-width : 992px)
   .menu, .header-bottom
     font-size: 12px
@@ -104,6 +121,9 @@
     max-width: none
     width: calc(100% - 450px)
     padding: 0 30px 0 0
+
+  .form-sorting label
+    width: 220px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 850px)
@@ -220,6 +240,24 @@
   .img-wrapper
     max-height: 300px
 
+  .catalog-wrapper .wrapper-row
+    justify-content: space-around
+
+  .form-sorting
+    justify-content: space-between
+    label
+      width: 49%
+      margin: 0 0 20px
+    button
+      max-width: 49%
+
+  select
+    height: 40px
+    font-size: 14px
+
+  .catalog-wrapper
+    padding: 24px 0
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 575px)
   .category-links
@@ -249,6 +287,12 @@
     width: 100%
     padding: 0
 
+  .form-sorting
+    label, button
+      margin: 0 0 20px
+      width: 100%
+      max-width: none
+
 @media only screen and (max-width : 480px)
   header
     .list-social
@@ -260,6 +304,10 @@
   select
     font-size: 14px
     padding: 0 14px
+
+  .form-group
+    select
+      background-position: 96% center
 
 @media only screen and (max-width : 420px)
   .header-bottom
