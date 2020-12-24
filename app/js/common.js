@@ -199,7 +199,7 @@ $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
 $(document).ready(function () {
     var overlay = $('.overlay');
     var open_modal = $('.open_modal');
-    var close = $('.modal__close, .overlay');
+    var close = $('.modal__close, .overlay, .btn-modal');
     var modal = $('.modal__div');
 
     open_modal.click(function (event) {
