@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>SRTK</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.svg" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+    <div class="btn-close"></div>
+
+    <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+    <ul class="menu">
+        <li><a href="catalog.html">Каталог товаров</a></li>
+        <li>
+            <a href="#">
+                <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+                Поиск по марке
+            </a>
+        </li>
+        <li><a href="delivery.html">Оплата и доставка</a></li>
+        <li><a href="return.html">Возврат и замена</a></li>
+    </ul>
+
+    <ul class="home-menu">
+        <li><a href="about.html">О компании</a></li>
+        <li><a href="news.html">Новости и статьи</a></li>
+        <li><a href="partners.html">Партнерам</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+
+    <ul class="list-social">
+        <li><a href="#">
+            <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#social-1"></use>
+            </svg>
+        </a></li>
+        <li><a href="#">
+            <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#social-2"></use>
+            </svg>
+        </a></li>
+        <li><a href="#">
+            <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#social-3"></use>
+            </svg>
+        </a></li>
+        <li><a href="#">
+            <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#social-4"></use>
+            </svg>
+        </a></li>
+    </ul>
+</div>
+
+<header>
+    <div class="header-top">
+        <div class="container">
+
+            <div class="location header-box">
+                <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#location"></use>
+                </svg>
+                <div class="location-text">Москва и Московская…</div>
+            </div>
+
+            <ul class="home-menu">
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="news.html">Новости и статьи</a></li>
+                <li><a href="partners.html">Партнерам</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+
+            <div class="phone-wrapper">
+                <a href="tel:+78342271043" class="phone links header-box">
+                    <svg class="phone-icon svg-icon">
+                        <use xlink:href="img/sprite.svg#phone"></use>
+                    </svg>
+                    <span class="links-text">+7 (8342) 27-10-43</span>
+                </a>
+
+                <a href="#" class="links-call links">Обратный звонок</a>
+            </div>
+
+            <ul class="list-social">
+                <li><a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#social-1"></use>
+                    </svg>
+                </a></li>
+                <li><a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#social-2"></use>
+                    </svg>
+                </a></li>
+                <li><a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#social-3"></use>
+                    </svg>
+                </a></li>
+                <li><a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#social-4"></use>
+                    </svg>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header-bottom">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+            <ul class="menu">
+                <li><a href="catalog.html">Каталог товаров</a></li>
+                <li>
+                    <a href="#">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#search"></use>
+                        </svg>
+                        Поиск по марке
+                    </a>
+                </li>
+                <li><a href="delivery.html">Оплата и доставка</a></li>
+                <li><a href="return.html">Возврат и замена</a></li>
+            </ul>
+
+            <a href="#" class="links">
+                <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#entrance"></use>
+                </svg>
+                <span class="links-text">Вход и регистрация</span>
+            </a>
+
+            <a href="basket.html" class="links links-basket">
+                <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#basket"></use>
+                </svg>
+                <span class="links-text">Корзина</span>
+            </a>
+
+            <div class="btn-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section class="delivery-order">
+    <div class="container">
+        <ul class="pagination">
+            <li>
+                <a href="catalog.html">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#arrow-left"></use>
+                    </svg>
+                    <span class="links-text">В каталог</span>
+                </a>
+            </li>
+            <li>
+                <a href="catalog.html">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#arrow-left"></use>
+                    </svg>
+                    <span class="links-text">В корзину</span>
+                </a>
+            </li>
+        </ul>
+
+        <h1>Доставка и способ оплаты</h1>
+
+        <form method="post" class="basket-content delivery-order-content">
+            <div class="basket-content__wrap">
+                <div class="delivery-order-box">
+                    <h3>1. Адрес доставки</h3>
+
+                    <label>
+                        <span class="input-title">Область</span>
+                        <input type="text" placeholder="Москва и Московская область" name="address">
+                    </label>
+
+                    <label>
+                        <span class="input-title">Город</span>
+                        <input type="text" placeholder="Москва" name="address">
+                    </label>
+
+                    <div class="form-group">
+                        <label class="label-street">
+                            <span class="input-title">Улица</span>
+                            <input type="text" placeholder="Пр. Академика Королева 12" name="address">
+                        </label>
+
+                        <label class="label-home">
+                            <span class="input-title">Дом/строение</span>
+                            <input type="text" placeholder="124" name="address">
+                        </label>
+
+                        <label class="label-apartment">
+                            <span class="input-title">Квартира</span>
+                            <input type="text" placeholder="124" name="address">
+                        </label>
+                    </div>
+
+                    <div class="attention">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#attention"></use>
+                        </svg>
+                        <p>Можно не заполнять поля улица, дом и квартира если выберите самовывоз или доаставку до пункта
+                            выдачи</p>
+                    </div>
+                </div>
+                <div class="delivery-order-box">
+                    <h3>2. Способ доставки</h3>
+                    <p>Доступные способы доставки для выбранного адреса</p>
+
+                    <div class="tabs w-100">
+                        <ul class="tabs__caption">
+                            <li class="active">ПЭК</li>
+                            <li>Деловые линии</li>
+                            <li>DPD (курьер)</li>
+                            <li>GTD (КИТ)</li>
+                            <li class="disabled">Самовывоз</li>
+                        </ul>
+                        <div class="tabs__content active">
+                            <ul class="list-delivery">
+                                <li>
+                                    <p>Ориентировочная дата доставки</p>
+                                    <span>24-26 января</span>
+                                </li>
+                                <li>
+                                    <p>Стоимость доставки составит:</p>
+                                    <span>600 ₽</span>
+                                </li>
+                            </ul>
+
+                            <a href="#modalLocation" class="location header-box open_modal">
+                                <svg class="svg-icon">
+                                    <use xlink:href="img/sprite.svg#location"></use>
+                                </svg>
+                                <div class="location-text">Выберите удобный для вас пункт выдачи</div>
+                            </a>
+                        </div>
+                        <div class="tabs__content">
+                            <ul class="list-delivery">
+                                <li>
+                                    <p>Ориентировочная дата доставки</p>
+                                    <span>24-26 января</span>
+                                </li>
+                                <li>
+                                    <p>Стоимость доставки составит:</p>
+                                    <span>800 ₽</span>
+                                </li>
+                            </ul>
+
+                            <a href="#modalLocation" class="location header-box open_modal">
+                                <svg class="svg-icon">
+                                    <use xlink:href="img/sprite.svg#location"></use>
+                                </svg>
+                                <div class="location-text">Выберите удобный для вас пункт выдачи</div>
+                            </a>
+                        </div>
+
+                        <div class="tabs__content">
+                            <ul class="list-delivery">
+                                <li>
+                                    <p>Ориентировочная дата доставки</p>
+                                    <span>24-26 января</span>
+                                </li>
+                                <li>
+                                    <p>Стоимость доставки составит:</p>
+                                    <span>1400 ₽</span>
+                                </li>
+                            </ul>
+
+                            <a href="#modalLocation" class="location header-box open_modal">
+                                <svg class="svg-icon">
+                                    <use xlink:href="img/sprite.svg#location"></use>
+                                </svg>
+                                <div class="location-text">Выберите удобный для вас пункт выдачи</div>
+                            </a>
+                        </div>
+
+                        <div class="tabs__content">
+                            <ul class="list-delivery">
+                                <li>
+                                    <p>Ориентировочная дата доставки</p>
+                                    <span>24-26 января</span>
+                                </li>
+                                <li>
+                                    <p>Стоимость доставки составит:</p>
+                                    <span>1600 ₽</span>
+                                </li>
+                            </ul>
+
+                            <a href="#modalLocation" class="location header-box open_modal">
+                                <svg class="svg-icon">
+                                    <use xlink:href="img/sprite.svg#location"></use>
+                                </svg>
+                                <div class="location-text">Выберите удобный для вас пункт выдачи</div>
+                            </a>
+                        </div>
+
+                        <div class="tabs__content">
+                            <ul class="list-delivery">
+                                <li>
+                                    <p>Ориентировочная дата доставки</p>
+                                    <span>24-26 января</span>
+                                </li>
+                                <li>
+                                    <p>Стоимость доставки составит:</p>
+                                    <span>Бесплатно</span>
+                                </li>
+                            </ul>
+
+                            <a href="#modalLocation" class="location header-box open_modal">
+                                <svg class="svg-icon">
+                                    <use xlink:href="img/sprite.svg#location"></use>
+                                </svg>
+                                <div class="location-text">Выберите удобный для вас пункт выдачи</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="delivery-order-box delivery-order-box-data">
+                    <h3>3. Данные получателя</h3>
+
+                    <div class="attention">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#attention"></use>
+                        </svg>
+                        <p>Согласно федеральному закону РФ "О противодействии терроризму" для оформления документов на
+                            отправку грузов требуется указать серию и номер паспорта получателя! (Если Вы выбрали
+                            вариант доставки DPD или GTD(КИТ) - то в поля ввода паспортных данных поставьте любые
+                            символы)</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="label-home input-doc">
+                            <span class="input-title">Серия паспорта</span>
+                            <input type="text" placeholder="8910" name="series">
+                        </label>
+
+                        <label class="label-apartment input-doc">
+                            <span class="input-title">Номер паспорта</span>
+                            <input type="text" placeholder="999999" name="number">
+                        </label>
+
+                        <label class="input-doc">
+                            <span class="input-title">Когда выдан</span>
+                            <input type="text" placeholder="99.99.9999" name="when-issued">
+                        </label>
+                    </div>
+
+                    <label>
+                        <span class="input-title">Кем выдан</span>
+                        <input type="text" placeholder="" name="">
+                    </label>
+
+                    <label>
+                        <span class="input-title">Фамилия</span>
+                        <input type="text" placeholder="" name="first_name">
+                    </label>
+                    <div class="form-group">
+                        <label>
+                            <span class="input-title">Имя</span>
+                            <input type="text" placeholder="" name="name">
+                        </label>
+
+                        <label>
+                            <span class="input-title">Отчество</span>
+                            <input type="text" placeholder="" name="last_name">
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <span class="input-title">Телефон</span>
+                            <input type="text" placeholder="" name="phone">
+                        </label>
+
+                        <label>
+                            <span class="input-title">Электронная почта</span>
+                            <input type="text" placeholder="" name="mail">
+                        </label>
+                    </div>
+
+                    <label>
+                        <span class="input-title">Комментарий к заказу</span>
+                        <input type="text" placeholder="" name="comment">
+                    </label>
+                </div>
+            </div>
+
+            <div class="registration-product">
+                <h3>Оформление</h3>
+
+                <label><input type="text" placeholder="Промокод"></label>
+
+                <div class="total-line">
+                    <p>1 товар</p>
+                    <span>12 000 ₽</span>
+                </div>
+                <div class="total-line">
+                    <p>Скидка</p>
+                    <span>-300 ₽</span>
+                </div>
+                <div class="total-line">
+                    <p>Итого</p>
+                    <div class="total-sum">11 700 ₽</div>
+                </div>
+
+                <button type="submit" class="btn btn-accent">Оплатить</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="consultation consultation-basket">
+    <div class="container">
+        <h2>Напишите нам, если у вас возникли проблемы
+            с оформлением заказа</h2>
+
+        <form method="post" class="form">
+            <label><input type="text" placeholder="Ваше имя" name="name"></label>
+            <label><input type="text" placeholder="Номер телефона" name="phone" required></label>
+            <label><input type="text" placeholder="Кратко опишите проблему или ваше пожелание" name="message"></label>
+
+            <button type="submit" class="btn btn-accent">Заказать консультацию</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-box">
+            <h3>Компания</h3>
+            <ul class="footer-menu">
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="news.html">Новости и статьи</a></li>
+                <li><a href="partners.html">Партнерам</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="delivery.html">Оплата и доставка</a></li>
+                <li><a href="return.html">Возврат и замена</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Каталог товаров</h3>
+            <ul class="footer-menu">
+                <li><a href="category.html">Автомобильные резиновые коврики 3D Standart</a></li>
+                <li><a href="category.html">Автомобильные резиновые коврики 3D Premium</a></li>
+                <li><a href="category.html">Автомобильные резиновые коврики 3D Lux</a></li>
+                <li><a href="category.html">Брызговики и локеры</a></li>
+                <li><a href="category.html">Поддоны и ковры багажника</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Социальные сети</h3>
+            <ul class="list-social">
+                <li><a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#social-2"></use>
+                    </svg>
+                    Drive2
+                </a></li>
+                <li><a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#social-3"></use>
+                    </svg>
+                    Вконтакте
+                </a></li>
+                <li><a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#social-4"></use>
+                    </svg>
+                    Instagram
+                </a></li>
+                <li><a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#social-1"></use>
+                    </svg>
+                    YouTube
+                </a></li>
+            </ul>
+        </div>
+        <div class="footer-box">
+            <a href="tel:+78342271043" class="phone links header-box">
+                <svg class="phone-icon svg-icon">
+                    <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+                <span class="links-text">+7 (8342) 27-10-43</span>
+            </a>
+
+            <a href="#" class="btn btn-white">Заказать обратный звонок</a>
+
+            <a href="#" class="developer"><img src="img/developer.svg" alt=""></a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+
+</html>

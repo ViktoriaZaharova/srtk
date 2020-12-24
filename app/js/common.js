@@ -164,9 +164,69 @@ $('.btn-load-card').on('click', function (e) {
 });
 
 // input mask
-$('input[name="phone"]').mask('+7 (999) 999 - 99 - 99');
+$('input[name="when-issued"]').mask('99.99.9999');
+
+$.fn.setCursorPosition = function(pos) {
+    if ($(this).get(0).setSelectionRange) {
+        $(this).get(0).setSelectionRange(pos, pos);
+    } else if ($(this).get(0).createTextRange) {
+        var range = $(this).get(0).createTextRange();
+        range.collapse(true);
+        range.moveEnd('character', pos);
+        range.moveStart('character', pos);
+        range.select();
+    }
+};
+
+$('input[name="phone"]').click(function(){
+    $(this).setCursorPosition(4);
+}).mask("+7 (999) 999 - 99 - 99");
+$('input[name="phone"]').mask("+7 (999) 999 - 99 - 99");
 
 // clone block
 if ($(".registration-product").length){
     $('.registration-product').clone().appendTo('.mobile-registration');
 }
+
+// tab
+$('ul.tabs__caption').on('click', 'li:not(.active)', function () {
+    $(this)
+        .addClass('active').siblings().removeClass('active')
+        .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+});
+
+// модальные окна (несколько)
+$(document).ready(function () {
+    var overlay = $('.overlay');
+    var open_modal = $('.open_modal');
+    var close = $('.modal__close, .overlay');
+    var modal = $('.modal__div');
+
+    open_modal.click(function (event) {
+        event.preventDefault();
+        var div = $(this).attr('href');
+        overlay.fadeIn(400,
+            function () {
+                $(div)
+                    .css('display', 'flex')
+                    .animate({
+                        opacity: 1,
+                        top: '50%'
+                    }, 200);
+            });
+    });
+
+    close.click(function () {
+        modal
+            .animate({
+                    opacity: 0,
+                    top: '45%'
+                }, 200,
+                function () {
+                    $(this).css('display', 'none');
+                    overlay.fadeOut(400);
+                }
+            );
+    });
+});
+//end

@@ -1586,6 +1586,9 @@ footer
   padding: 16px 24px 24px
   width: 384px
 
+  .btn
+    width: 100%
+
   h3
     font-size: 24px
     font-weight: 500
@@ -1603,6 +1606,7 @@ footer
   justify-content: space-between
   flex-wrap: wrap
   margin: 0 0 24px
+
   span
     font-weight: 500
 
@@ -1635,6 +1639,7 @@ footer
   overflow: hidden
   width: 240px
   height: 180px
+
   img
     width: 100%
     height: 100%
@@ -1651,9 +1656,11 @@ footer
 
 .label-amount
   max-width: 72px
+
   input
     text-align: center
     color: #333132
+
     &::placeholder
       color: #333132
 
@@ -1685,16 +1692,147 @@ footer
 .additional-goods
   max-width: 768px
   width: 100%
+
   h2
     text-align: center
+
   .news-card
     margin: 32px auto 0
 
-.mobile-registration
-  display: none
-  .registration-product
-    display: block
+.basket
+  .mobile-registration
+    display: none
 
+    .registration-product
+      display: block
+
+//delivery-order
+.delivery-order
+  padding: 0 0 48px
+
+.attention
+  width: 100%
+  display: flex
+  align-items: flex-start
+  color: #817A6C
+  font-size: 12px
+
+  svg
+    fill: #E8A016
+    margin: 5px 9px 0 0
+    width: 14px
+    height: 12px
+    min-width: 14px
+
+.delivery-order-box
+  background: #fff
+  width: 100%
+  margin: 0 0 16px
+  box-shadow: 0 2px 4px rgba(129, 122, 108, 0.16), 0 0 24px rgba(129, 122, 108, 0.16)
+  padding: 16px 24px 24px
+  &:last-child
+    margin: 0
+  h3
+    margin: 0 0 24px
+    width: 100%
+    font-size: 24px
+    font-weight: 500
+  label
+    input
+      color: #333132
+      &::placeholder
+        color: #333132
+  .form-group
+    .label-street
+      max-width: 48%
+    .label-apartment, .label-home
+      max-width: 22.5%
+  .input-doc
+    input
+      &::placeholder
+        color: #C0BCB5
+
+.input-title
+  display: block
+  width: 100%
+  margin: 0 0 8px
+
+//tabs
+.tabs__content
+  display: none
+  width: 100%
+  padding: 24px 0 0
+  .location
+    color: $accent
+    width: 100%
+    svg
+      fill: $accent
+
+.tabs__content.active
+  display: flex
+  flex-wrap: wrap
+
+.tabs
+  margin: 8px 0 0
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.tabs__caption
+  display: flex
+  align-items: stretch
+  justify-content: flex-start
+  flex-wrap: wrap
+  border: 1px solid #C0BCB5
+    radius: 4px
+  font-weight: 500
+  cursor: pointer
+  li
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 8px 16px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      right: 0
+      top: 50%
+      transform: translate(0,-50%)
+      width: 1px
+      height: 24px
+      background: #C0BCB5
+    &:last-child
+      &:before
+        display: none
+  .active
+    color: #fff
+    box-shadow: 0 4px 8px rgba(181, 24, 39, 0.32), inset 0px -4px 8px rgba(231, 34, 52, 0.8)
+    border-radius: 4px
+    background: #B51827
+    &:before
+      opacity: 0
+  .disabled
+    color: #C0BCB5
+
+.list-delivery
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  line-height: 24px
+  margin: 0 0 24px
+  span
+    font-size: 24px
+    font-weight: 500
+    margin: 8px 0 0
+    display: block
+  li
+    width: 50%
+
+.delivery-order-box-data
+  .attention
+    margin: 0 0 24px
 
 @import "media"
 // Всегда в конце

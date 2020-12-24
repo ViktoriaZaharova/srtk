@@ -63,7 +63,7 @@
   .product-slider-min
     padding: 0 20px
 
-  .registration-product
+  .basket .registration-product
     display: none
     width: 100%
 
@@ -71,7 +71,7 @@
     width: 100%
     padding: 0
 
-  .mobile-registration
+  .basket .mobile-registration
     display: block
     max-width: none
     margin: 0 auto 30px
@@ -162,6 +162,7 @@
 
   .product-slider-max__item
     height: 300px
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 850px)
@@ -321,6 +322,20 @@
     max-width: none
     margin: 0 0 20px
 
+  .basket, .delivery-order
+    padding: 0 0 30px
+
+  .delivery-order-box
+    h3
+      font-size: 20px
+      margin: 0 0 16px
+
+  .list-delivery span
+    font-size: 20px
+
+  .delivery-order-box .form-group .label-apartment, .delivery-order-box .form-group .label-home
+    max-width: 49%
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 575px)
   .category-links
@@ -365,6 +380,12 @@
     padding: 10px
     width: calc(100% - 160px)
 
+  .tabs__caption
+    li
+      width: 50%
+      &:before
+        display: none
+
 @media only screen and (max-width : 480px)
   header
     .list-social
@@ -382,6 +403,9 @@
       background-position: 96% center
 
   .col-3, .col-4
+    width: 100%
+
+  .list-delivery li
     width: 100%
 
 @media only screen and (max-width : 420px)
@@ -439,3 +463,9 @@
 
   .total-sum
     font-size: 20px
+
+  .delivery-order-box .form-group .label-apartment, .delivery-order-box .form-group .label-home, .delivery-order-box .form-group .label-street
+    max-width: none
+
+  .input-title
+    font-size: 14px
