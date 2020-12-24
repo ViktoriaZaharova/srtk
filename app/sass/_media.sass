@@ -44,6 +44,12 @@
   .product-slider-min
     padding: 0 40px
 
+  .registration-product
+    width: 320px
+
+  .basket-content__wrap
+    width: calc(100% - 320px)
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1100px)
   .catalog-wrapper__content
@@ -56,6 +62,23 @@
 
   .product-slider-min
     padding: 0 20px
+
+  .registration-product
+    display: none
+    width: 100%
+
+  .basket-content__wrap
+    width: 100%
+    padding: 0
+
+  .mobile-registration
+    display: block
+    max-width: none
+    margin: 0 auto 30px
+    width: 100%
+
+  .additional-goods
+    max-width: none
 
 @media only screen and (max-width : 992px)
   .menu, .header-bottom
@@ -294,6 +317,10 @@
   .product-information
     width: 100%
 
+  .product-card__it
+    max-width: none
+    margin: 0 0 20px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 575px)
   .category-links
@@ -328,6 +355,15 @@
       margin: 0 0 20px
       width: 100%
       max-width: none
+
+  .product-card__img
+    width: 160px
+    height: 170px
+
+  .product-card__body
+    font-size: 14px
+    padding: 10px
+    width: calc(100% - 160px)
 
 @media only screen and (max-width : 480px)
   header
@@ -393,3 +429,13 @@
 
   .product-information .price-wrapper
     font-size: 30px
+
+  .product-card__img
+    width: 100%
+    height: 160px
+
+  .product-card__body
+    width: 100%
+
+  .total-sum
+    font-size: 20px

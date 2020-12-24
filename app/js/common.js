@@ -165,3 +165,8 @@ $('.btn-load-card').on('click', function (e) {
 
 // input mask
 $('input[name="phone"]').mask('+7 (999) 999 - 99 - 99');
+
+// clone block
+if ($(".registration-product").length){
+    $('.registration-product').clone().appendTo('.mobile-registration');
+}

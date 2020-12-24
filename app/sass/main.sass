@@ -1472,6 +1472,9 @@ footer
   .list-check
     color: #817A6C
 
+  .list-dots
+    font-size: 12px
+
   .btn
     margin: 16px 0 28px
     width: 100%
@@ -1490,7 +1493,7 @@ footer
       color: #817A6C
       min-width: 140px
 
-.links-red
+.links-red, .color-accent
   color: $accent
 
 .product-info-box
@@ -1558,8 +1561,140 @@ footer
   align-items: flex-start
   justify-content: center
   flex-wrap: wrap
+
   .news-card
     margin: 32px 12px 0
+
+.consultation-basket
+  .container
+    align-items: flex-start
+
+  h2
+
+    max-width: calc(100% - 544px)
+    padding: 10px 32px 0 0
+
+//.basket
+.basket
+  padding: 0 0 48px
+  background: url("../img/decor-bg6.svg") no-repeat center bottom
+    size: cover
+
+.registration-product
+  box-shadow: 0 2px 4px rgba(129, 122, 108, 0.16), 0px 0px 24px rgba(129, 122, 108, 0.16)
+  background: #fff
+  padding: 16px 24px 24px
+  width: 384px
+
+  h3
+    font-size: 24px
+    font-weight: 500
+    text-align: center
+    width: 100%
+    margin: 0 auto 24px
+
+  label
+    margin: 0 0 24px
+
+.total-line
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0 0 24px
+  span
+    font-weight: 500
+
+.total-sum
+  font-size: 24px
+
+.basket-content__wrap
+  width: calc(100% - 384px)
+  padding: 0 32px 0 0
+
+.basket-content
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  width: 100%
+
+.product-card
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  box-shadow: 0 2px 4px rgba(129, 122, 108, 0.16), 0 0 24px rgba(129, 122, 108, 0.16)
+  background: #fff
+  margin: 0 0 32px
+
+.product-card__img
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  width: 240px
+  height: 180px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.product-card__body
+  width: calc(100% - 240px)
+  padding: 16px 32px 16px 24px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  font-weight: 500
+
+.label-amount
+  max-width: 72px
+  input
+    text-align: center
+    color: #333132
+    &::placeholder
+      color: #333132
+
+.product-card__it
+  max-width: 208px
+  width: 100%
+
+.product-card__title
+  color: #333132
+  margin: 0 0 8px
+
+.article
+  color: #817A6C
+  font-size: 12px
+  font-weight: 400
+
+.btn-delete
+  display: flex
+  align-items: center
+  justify-content: center
+  fill: $accent
+  width: 16px
+  height: 16px
+  margin: 15px 0 0
+
+.cost
+  margin: 15px 0 0
+
+.additional-goods
+  max-width: 768px
+  width: 100%
+  h2
+    text-align: center
+  .news-card
+    margin: 32px auto 0
+
+.mobile-registration
+  display: none
+  .registration-product
+    display: block
+
 
 @import "media"
 // Всегда в конце
