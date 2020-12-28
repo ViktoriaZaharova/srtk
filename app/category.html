@@ -82,12 +82,12 @@
     <div class="header-top">
         <div class="container">
 
-            <div class="location header-box">
+            <a href="#modalCity" class="location header-box open_modal links">
                 <svg class="svg-icon">
                     <use xlink:href="img/sprite.svg#location"></use>
                 </svg>
-                <div class="location-text">Москва и Московская…</div>
-            </div>
+                <span class="location-text">Москва и Московская…</span>
+            </a>
 
             <ul class="home-menu">
                 <li><a href="about.html">О компании</a></li>
@@ -104,7 +104,7 @@
                     <span class="links-text">+7 (8342) 27-10-43</span>
                 </a>
 
-                <a href="#" class="links-call links">Обратный звонок</a>
+                <a href="#modalCall" class="links-call links open_modal">Обратный звонок</a>
             </div>
 
             <ul class="list-social">
@@ -150,7 +150,7 @@
                 <li><a href="return.html">Возврат и замена</a></li>
             </ul>
 
-            <a href="#" class="links">
+            <a href="#modalRegistration" class="links open_modal">
                 <svg class="svg-icon">
                     <use xlink:href="img/sprite.svg#entrance"></use>
                 </svg>
@@ -1213,6 +1213,102 @@
         </div>
     </div>
 </footer>
+
+<div class="modal__div" id="modalLocation">
+    <div class="modal__wrapper">
+        <h2>Выберите город проживания</h2>
+
+        <form method="post" class="modal-form">
+
+            <ul class="list-city">
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Саранск</a></li>
+                <li><a href="#">Другое</a></li>
+            </ul>
+
+            <button type="submit" class="btn btn-accent">Выбрать</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal__div" id="modalCity">
+    <div class="modal__wrapper">
+        <h2>Выберите город проживания</h2>
+
+        <form method="post" class="modal-form">
+            <ul class="list-city">
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Саранск</a></li>
+                <li><a href="#">Другое</a></li>
+            </ul>
+
+            <button type="submit" class="btn btn-accent">Выбрать</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal__div" id="modalCall">
+    <div class="modal__wrapper">
+        <h2>Заказ обратного звонка</h2>
+
+        <form method="post" class="modal-form">
+            <label><input type="text" placeholder="Ваше имя" name="name"></label>
+            <label><input type="text" placeholder="Номер телефона" name="phone" required></label>
+            <label><input type="text" placeholder="Кратко опишите проблему или ваше пожелание" name="message"></label>
+
+            <button type="submit" class="btn btn-accent">Заказать</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal__div" id="modalRegistration">
+    <div class="modal__wrapper">
+        <div class="tabs">
+            <ul class="tabs__caption">
+                <li class="active">Вход</li>
+                <li>Регистрация</li>
+            </ul>
+
+            <div class="tabs__content active">
+                <form method="post" class="modal-form">
+                    <label><input type="text" placeholder="Электронная почта" name="mail" required></label>
+                    <label><input type="text" placeholder="Пароль" name="password" required></label>
+                    <a href="#" class="links-black">Забыли пароль?</a>
+
+                    <button type="submit" class="btn btn-accent">Войти</button>
+                </form>
+            </div>
+            <div class="tabs__content">
+                <form method="post" class="modal-form">
+                    <label><input type="text" placeholder="Ваше имя" name="name"></label>
+                    <label><input type="text" placeholder="Номер телефона" name="phone" required></label>
+                    <label><input type="text" placeholder="Электронная почта" name="mail" required></label>
+                    <label><input type="text" placeholder="Пароль" name="password" required></label>
+
+                    <button type="submit" class="btn btn-accent">Зарегистрироваться</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal__div" id="modalCard">
+    <div class="modal__wrapper">
+        <h2>Товар в корзине!</h2>
+
+        <div class="box-text">
+            <p>В корзине "Коврики реиновые 3D LUX для BMW X4 (G02) (2018-) передние". Хотите продолжить покупки или перейти к оплате</p>
+        </div>
+
+        <div class="line-wrapper">
+            <a href="basket.html" class="btn btn-accent">Перейти к оплате</a>
+            <button type="button" class="btn btn-modal">Продолжить выбор</button>
+        </div>
+    </div>
+</div>
+
+<div class="overlay"></div><!-- Пoдлoжкa -->
 
 <script src="js/jquery.min.js"></script>
 <script src="js/libs.min.js"></script>

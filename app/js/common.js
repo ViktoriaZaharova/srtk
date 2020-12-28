@@ -1,3 +1,40 @@
+$('.list-mark').slick({
+    slidesToShow: 11,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+        {
+            breakpoint: 1070,
+            settings: {
+                slidesToShow: 9,
+            }
+        },
+        {
+            breakpoint: 1030,
+            settings: {
+                slidesToShow: 7,
+            }
+        },
+        {
+            breakpoint: 860,
+            settings: {
+                slidesToShow: 5,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 9,
+            }
+        },
+        {
+            breakpoint: 550,
+            settings: {
+                slidesToShow: 5,
+            }
+        }
+    ]
+})
 $(".news-slider").slick({
     slidesToShow: 4,
     prevArrow: '<button type="button" class="slick-prev"><svg width="16" height="29" viewBox="0 0 16 29" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
