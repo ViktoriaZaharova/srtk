@@ -969,7 +969,8 @@ header {
   padding: 48px 0; }
   .consultation:before {
     background: url("../img/decor-bg3.svg") no-repeat center top;
-    size: 100%; }
+      background-size: 100%;
+    height: 100%; }
   .consultation h2 {
     max-width: 415px;
     width: 100%; }
