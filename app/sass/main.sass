@@ -2,1940 +2,1961 @@
 @import "vars"
 
 *
-  -webkit-box-sizing: border-box
-  -moz-box-sizing: border-box
-  box-sizing: border-box
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
 
-  &:before, &:after
-    -webkit-box-sizing: border-box
-    -moz-box-sizing: border-box
-    box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
 
 *::-webkit-input-placeholder
-  color: #666
-  opacity: 1
+	color: #666
+	opacity: 1
 
 *:-moz-placeholder
-  color: #666
-  opacity: 1
+	color: #666
+	opacity: 1
 
 *::-moz-placeholder
-  color: #666
-  opacity: 1
+	color: #666
+	opacity: 1
 
 *:-ms-input-placeholder
-  color: #666
-  opacity: 1
+	color: #666
+	opacity: 1
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
-  color: #666
+	color: #666
 
 body input:required:valid,
 body textarea:required:valid
-  color: #666
+	color: #666
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
-  margin: 0
-  padding: 0
-  border: 0
-  font-size: 100%
-  font: inherit
-  vertical-align: baseline
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
-  display: block
+	display: block
 
 ol, ul
-  list-style: none
+	list-style: none
 
 blockquote, q
-  quotes: none
+	quotes: none
 
 blockquote:before, blockquote:after, q:before, q:after
-  content: ''
-  content: none
+	content: ''
+	content: none
 
 table
-  border-collapse: collapse
-  border-spacing: 0
+	border-collapse: collapse
+	border-spacing: 0
 
 body
-  font-size: 16px
-  min-width: 320px
-  position: relative
-  line-height: normal
-  font-family: $default-font
-  font-weight: normal
-  color: #333132
-  background: #fff
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: normal
+	font-family: $default-font
+	font-weight: normal
+	color: #333132
+	background: #fff
 
 html, body
-  overflow-x: hidden
+	overflow-x: hidden
 
 img
-  display: block
-  max-width: 100%
-  height: auto
+	display: block
+	max-width: 100%
+	height: auto
 
 .text-center
-  text-align: center
+	text-align: center
 
 a
-  display: block
-  text-decoration: none
-  transition: .3s ease
-  outline: none
+	display: block
+	text-decoration: none
+	transition: .3s ease
+	outline: none
 
-  &:hover, &:focus
-    text-decoration: none
+	&:hover, &:focus
+		text-decoration: none
 
 input, textarea, select
-  outline: none
-  box-shadow: none
-  appearance: none
-  padding: 0
-  box-sizing: border-box
-  font-family: $default-font
+	outline: none
+	box-shadow: none
+	appearance: none
+	padding: 0
+	box-sizing: border-box
+	font-family: $default-font
 
 input
-  width: 100%
-  height: 48px
-  padding: 0 16px
-  border: 1px solid #C0BCB5
-    radius: 4px
-  background: #fff
-  color: #C0BCB5
-  font-size: 16px
-  font-weight: 500
+	width: 100%
+	height: 48px
+	padding: 0 16px
+	border: 1px solid #C0BCB5
+	radius: 4px
+	background: #fff
+	color: #C0BCB5
+	font-size: 16px
+	font-weight: 500
 
-  &::placeholder
-    color: #C0BCB5
+	&::placeholder
+		color: #C0BCB5
 
 select
-  appearance: none
-  height: 48px
-  width: 100%
-  border-radius: 4px
-  padding: 0 32px 0 16px
-  color: #333132
-  font-size: 16px
-  font-weight: 500
-  border: 1px solid #C0BCB5
-  cursor: pointer
-  background: #fff url("../img/select-arrow.svg") no-repeat 96% center
-    size: 10px
+	appearance: none
+	height: 48px
+	width: 100%
+	border-radius: 4px
+	padding: 0 32px 0 16px
+	color: #333132
+	font-size: 16px
+	font-weight: 500
+	border: 1px solid #C0BCB5
+	cursor: pointer
+	background: #fff url("../img/select-arrow.svg") no-repeat 96% center
+	size: 10px
 
 select:disabled
-  opacity: .3
+	opacity: .3
 
 .select-disabled
-  color: #C0BCB5
+	color: #C0BCB5
 
 .btn:disabled
-  background: #E4E5E6
-  box-shadow: none
-  color: #C0BCB5
-  text-shadow: none
+	background: #E4E5E6
+	box-shadow: none
+	color: #C0BCB5
+	text-shadow: none
 
 label
-  display: block
-  margin: 0 0 16px
-
+	display: block
+	margin: 0 0 16px
 
 button
-  outline: none
-  border: none
-  padding: 0
-  box-sizing: border-box
-  cursor: pointer
-  font-family: $default-font
+	outline: none
+	border: none
+	padding: 0
+	box-sizing: border-box
+	cursor: pointer
+	font-family: $default-font
 
-  &:focus
-    box-shadow: none
+	&:focus
+		box-shadow: none
 
 .container
-  display: flex
-  flex-wrap: wrap
-  position: relative
-  margin: 0 auto
-  width: 100%
-  padding: 0 15px
-  max-width: 1246px
-  z-index: 1
+	display: flex
+	flex-wrap: wrap
+	position: relative
+	margin: 0 auto
+	width: 100%
+	padding: 0 15px
+	max-width: 1246px
+	z-index: 1
 
 .svg-icon
-  width: 100%
-  height: 100%
-  display: inline-block
-  transition: .3s ease
+	width: 100%
+	height: 100%
+	display: inline-block
+	transition: .3s ease
 
 .btn
-  display: flex
-  align-items: center
-  justify-content: center
-  text-align: center
-  height: 48px
-  border-radius: 4px
-  color: #333132
-  font-size: 16px
-  font-weight: 500
-  padding: 0 32px
-  width: fit-content
-  transition: .3s ease
+	display: flex
+	align-items: center
+	justify-content: center
+	text-align: center
+	height: 48px
+	border-radius: 4px
+	color: #333132
+	font-size: 16px
+	font-weight: 500
+	padding: 0 32px
+	width: fit-content
+	transition: .3s ease
 
 .btn-accent
-  box-shadow: 0 4px 8px rgba(181, 24, 39, 0.32), inset 0px -4px 8px rgba(231, 34, 52, 0.8)
-  background: linear-gradient(180deg, #DD1528 0%, #B51827 100%)
-  color: #fff
-  text-shadow: 0 1px 0 rgba(74, 0, 0, 0.4)
+	box-shadow: 0 4px 8px rgba(181, 24, 39, 0.32), inset 0px -4px 8px rgba(231, 34, 52, 0.8)
+	background: linear-gradient(180deg, #DD1528 0%, #B51827 100%)
+	color: #fff
+	text-shadow: 0 1px 0 rgba(74, 0, 0, 0.4)
 
-  &:hover
-    background: linear-gradient(180deg, #B51827 0%, #DD1528 100%)
+	&:hover
+		background: linear-gradient(180deg, #B51827 0%, #DD1528 100%)
 
 .btn-white
-  box-shadow: 0 0 4px rgba(192, 188, 181, 0.32), 0 4px 8px rgba(129, 122, 108, 0.16)
-  background: #fff
+	box-shadow: 0 0 4px rgba(192, 188, 181, 0.32), 0 4px 8px rgba(129, 122, 108, 0.16)
+	background: #fff
 
-  &:hover
-    background: $accent
-    color: #fff
+	&:hover
+		background: $accent
+		color: #fff
 
 h1
-  width: 100%
-  text-align: center
-  margin: 0 auto 32px
-  font-size: 36px
-  font-weight: 500
+	width: 100%
+	text-align: center
+	margin: 0 auto 32px
+	font-size: 36px
+	font-weight: 500
 
 h2
-  font-size: 36px
-  font-weight: 500
-  width: 100%
+	font-size: 36px
+	font-weight: 500
+	width: 100%
 
 .bg-grey
-  background: #F6F6F5
+	background: #F6F6F5
 
 .logo
-  display: flex
-  align-items: center
-  justify-content: center
+	display: flex
+	align-items: center
+	justify-content: center
 
 //header
 header
-  box-shadow: 0 0 24px rgba(129, 122, 108, 0.32)
-  background: #fff
-  margin: 0 0 32px
+	box-shadow: 0 0 24px rgba(129, 122, 108, 0.32)
+	background: #fff
+	margin: 0 0 32px
 
 .header-top
-  background: $brown
-  color: #fff
-  font-size: 12px
+	background: $brown
+	color: #fff
+	font-size: 12px
 
-  .container
-    align-items: center
-    justify-content: space-between
-    min-height: 48px
+	.container
+		align-items: center
+		justify-content: space-between
+		min-height: 48px
 
-  .links
-    color: #fff
+	.links
+		color: #fff
 
 .header-box
-  .svg-icon
-    margin: 0 8px 0 0
-    width: 16px
-    height: 16px
-    fill: #E4E5E6
+	.svg-icon
+		margin: 0 8px 0 0
+		width: 16px
+		height: 16px
+		fill: #E4E5E6
 
 .header-bottom
-  box-shadow: 0 0 24px rgba(129, 122, 108, 0.32)
-  background: #fff
-  padding: 16px 0
-  font-size: 14px
+	box-shadow: 0 0 24px rgba(129, 122, 108, 0.32)
+	background: #fff
+	padding: 16px 0
+	font-size: 14px
 
-  .container
-    align-items: center
+	.container
+		align-items: center
 
-  .links
-    color: #333132
-    display: flex
-    align-items: center
+	.links
+		color: #333132
+		display: flex
+		align-items: center
 
-    .svg-icon
-      width: 12px
-      height: 14px
-      margin: 0 8px 0 0
-      fill: #817A6C
+		.svg-icon
+			width: 12px
+			height: 14px
+			margin: 0 8px 0 0
+			fill: #817A6C
 
 .location
-  display: flex
-  align-items: center
+	display: flex
+	align-items: center
 
-  .svg-icon
-    fill: #E4E5E6
+	.svg-icon
+		fill: #E4E5E6
 
 .header-top
-  a
-    color: #FFFFFF
+	a
+		color: #FFFFFF
 
 .list-social
-  display: flex
-  align-items: center
-  flex-wrap: wrap
+	display: flex
+	align-items: center
+	flex-wrap: wrap
 
-  li
-    margin: 0 32px 0 0
+	li
+		margin: 0 32px 0 0
 
-    &:last-child
-      margin: 0
+		&:last-child
+			margin: 0
 
-    a
-      display: flex
-      align-items: center
-      justify-content: flex-start
-      color: #C0BCB5
-      font-size: 12px
+		a
+			display: flex
+			align-items: center
+			justify-content: flex-start
+			color: #C0BCB5
+			font-size: 12px
 
-      svg
-        width: 16px
-        height: 16px
-        fill: #E4E5E6
-
+			svg
+				width: 16px
+				height: 16px
+				fill: #E4E5E6
 
 .home-menu
-  display: flex
-  align-items: center
-  flex-wrap: wrap
+	display: flex
+	align-items: center
+	flex-wrap: wrap
 
-  li
-    margin: 0 32px 0 0
+	li
+		margin: 0 32px 0 0
 
-    &:last-child
-      margin: 0
+		&:last-child
+			margin: 0
 
-    a
-      font-size: 12px
-      color: #fff
+		a
+			font-size: 12px
+			color: #fff
 
-      &:hover
-        color: #333132
+			&:hover
+				color: #333132
 
-    .active
-      color: #333132
+		.active
+			color: #333132
 
 .phone-wrapper
-  display: flex
-  align-items: center
-  flex-wrap: wrap
+	display: flex
+	align-items: center
+	flex-wrap: wrap
 
 .phone
-  display: flex
-  align-items: center
+	display: flex
+	align-items: center
 
 .links-call
-  margin: 0 0 0 20px
+	margin: 0 0 0 20px
 
 .menu
-  display: flex
-  align-items: center
-  flex-wrap: wrap
-  font-size: 14px
-  margin: 0 auto
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	font-size: 14px
+	margin: 0 auto
 
-  li
-    margin: 0 32px 0 0
+	li
+		margin: 0 32px 0 0
 
-    &:last-child
-      margin: 0
+		&:last-child
+			margin: 0
 
-    a
-      color: #333132
-      display: flex
-      align-items: center
+		a
+			color: #333132
+			display: flex
+			align-items: center
 
-      &:hover
-        color: $accent
+			&:hover
+				color: $accent
 
-    .current
-      color: $accent
+		.current
+			color: $accent
 
-  .svg-icon
-    margin: 0 9.5px 0 0
-    fill: #817A6C
-    width: 12.5px
-    height: 12.5px
+	.svg-icon
+		margin: 0 9.5px 0 0
+		fill: #817A6C
+		width: 12.5px
+		height: 12.5px
 
 .links-basket
-  margin: 0 0 0 32px
+	margin: 0 0 0 32px
 
-  .svg-icon
-    fill: #817A6C
-    width: 14px
-    height: 12px
-    margin: 0 9px 0 0
+	.svg-icon
+		fill: #817A6C
+		width: 14px
+		height: 12px
+		margin: 0 9px 0 0
 
 .form-search
-  display: flex
-  align-items: center
+	display: flex
+	align-items: center
 
-  button
-    width: 12.5px
-    height: 12.5px
-    background: transparent
-    margin: 0 9px 0 0
+	button
+		width: 12.5px
+		height: 12.5px
+		background: transparent
+		margin: 0 9px 0 0
 
-  input
-    border: none
-    width: 125px
-    font-size: 14px
-    color: #333132
+	input
+		border: none
+		width: 125px
+		font-size: 14px
+		color: #333132
 
-    &::placeholder
-      color: #333132
+		&::placeholder
+			color: #333132
 
 //main
 .col
-  display: flex
-  flex-direction: column
-  height: 100%
-  justify-content: space-between
-  margin: 0 0 0 auto
-  max-width: 384px
-  width: 100%
+	display: flex
+	flex-direction: column
+	height: 100%
+	justify-content: space-between
+	margin: 0 0 0 auto
+	max-width: 384px
+	width: 100%
 
 .category-box
-  width: calc(100% - 416px)
-  position: relative
-  max-height: 400px
-  overflow: hidden
-  margin: 0 0 32px
+	width: calc(100% - 416px)
+	position: relative
+	max-height: 400px
+	overflow: hidden
+	margin: 0 0 32px
 
-  &:before
-    content: ''
-    width: 100%
-    height: 239px
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%)
-    position: absolute
-    left: 0
-    bottom: 0
+	&:before
+		content: ''
+		width: 100%
+		height: 239px
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%)
+		position: absolute
+		left: 0
+		bottom: 0
 
 .category-box__img
-  width: 100%
-  height: 100%
-  display: flex
-  align-items: center
-  justify-content: center
-  img
-    width: 100%
-    height: 100%
-    object-fit: cover
+	width: 100%
+	height: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
 
 .category-links
-  color: #fff
-  font-size: 36px
-  font-weight: 500
+	color: #fff
+	font-size: 36px
+	font-weight: 500
 
 .category-box__content
-  position: absolute
-  left: 0
-  bottom: 0
-  width: 100%
-  padding: 0 48px 32px
+	position: absolute
+	left: 0
+	bottom: 0
+	width: 100%
+	padding: 0 48px 32px
 
-  .list-dots
-    color: #fff
-    margin: 16px 0 0
+	.list-dots
+		color: #fff
+		margin: 16px 0 0
 
 .list-dots
-  width: 100%
-  display: flex
-  align-items: center
-  flex-wrap: wrap
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
 
-  li
-    margin: 0 16px 0 0
-    display: flex
-    align-items: center
+	li
+		margin: 0 16px 0 0
+		display: flex
+		align-items: center
 
-    &:last-child
-      margin: 0
+		&:last-child
+			margin: 0
 
-    &:before
-      content: ''
-      display: inline-block
-      width: 4px
-      min-width: 4px
-      height: 4px
-      border-radius: 50%
-      background: $accent
-      margin: 0 10px 0 0
+		&:before
+			content: ''
+			display: inline-block
+			width: 4px
+			min-width: 4px
+			height: 4px
+			border-radius: 50%
+			background: $accent
+			margin: 0 10px 0 0
 
 .category-box__min
-  width: 100%
-  max-height: 184px
+	width: 100%
+	max-height: 184px
 
-  &:before
-    height: 96px
+	&:before
+		height: 96px
 
-  .category-links
-    font-size: 16px
+	.category-links
+		font-size: 16px
 
-  .category-box__content
-    padding: 32px 24px
+	.category-box__content
+		padding: 32px 24px
 
 //select-brand
 .select-brand
-  h2
-    padding: 0 30px
-    margin: 10px 0 32px
+	h2
+		padding: 0 30px
+		margin: 10px 0 32px
 
 .decor-bg
-  position: relative
-  padding: 48px 0
+	position: relative
+	padding: 48px 0
 
-  &:before
-    content: ''
-    position: absolute
-    left: 0
-    top: 0
-    width: 100%
-    height: 260px
-    background: url("../img/decor-bg1.svg") no-repeat center top
-      size: 100%
-    z-index: 1
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 260px
+		background: url("../img/decor-bg1.svg") no-repeat center top
+		size: 100%
+		z-index: 1
 
-  .container
-    align-items: flex-start
-    justify-content: space-between
-
+	.container
+		align-items: flex-start
+		justify-content: space-between
 
 .form-selected
-  max-width: 544px
-  width: 100%
+	max-width: 544px
+	width: 100%
 
 .form-group
-  width: 100%
-  display: flex
-  align-items: flex-start
-  justify-content: space-between
-  flex-wrap: wrap
+	width: 100%
+	display: flex
+	align-items: flex-start
+	justify-content: space-between
+	flex-wrap: wrap
 
-  label
-    width: 49%
+	label
+		width: 49%
 
-  select
-    background-position: 92% center
+	select
+		background-position: 92% center
 
 .select-brand__box
-  width: calc(100% - 544px)
-  padding: 0 16px 0 0
+	width: calc(100% - 544px)
+	padding: 0 16px 0 0
 
 .list-mark
-  width: 100%
-  position: relative
-  opacity: .3
+	width: 100%
+	position: relative
+	opacity: .3
 
-  &:before, &:after
-    content: ''
-    position: absolute
-    width: 104px
-    height: 100%
-    top: 50%
-    transform: translate(0, -50%)
-    z-index: 1
-  &:before
-    left: 0
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%)
+	&:before, &:after
+		content: ''
+		position: absolute
+		width: 104px
+		height: 100%
+		top: 50%
+		transform: translate(0, -50%)
+		z-index: 1
+	&:before
+		left: 0
+		background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%)
 
-  &:after
-    right: 0
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%)
-
+	&:after
+		right: 0
+		background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%)
 
 .list-mark-logo
-  width: 48px
-  height: 48px
-  display: flex
-  align-items: center
-  justify-content: center
+	width: 48px
+	height: 48px
+	display: flex
+	align-items: center
+	justify-content: center
 
 //.news
 .news
-  position: relative
-  padding: 32px 0
+	position: relative
+	padding: 32px 0
 
-  h2
-    text-align: center
+	h2
+		text-align: center
 
 .news-slider
-  width: 100%
-  padding: 0 50px
+	width: 100%
+	padding: 0 50px
 
 .slick-slide
-  outline: none
+	outline: none
 
 .news-card
-  width: 240px
-  background: #fff
-  position: relative
-  box-shadow: 0 2px 4px rgba(129, 122, 108, 0.16), 0 0 24px rgba(129, 122, 108, 0.16)
-  margin: 32px auto 16px
+	width: 240px
+	background: #fff
+	position: relative
+	box-shadow: 0 2px 4px rgba(129, 122, 108, 0.16), 0 0 24px rgba(129, 122, 108, 0.16)
+	margin: 32px auto 16px
 
 .tag
-  position: absolute
-  left: 0
-  z-index: 1
-  top: 12px
-  color: #fff
-  padding: 0 8px 0 16px
-  height: 24px
-  font-size: 12px
-  display: flex
-  align-items: center
-  justify-content: center
+	position: absolute
+	left: 0
+	z-index: 1
+	top: 12px
+	color: #fff
+	padding: 0 8px 0 16px
+	height: 24px
+	font-size: 12px
+	display: flex
+	align-items: center
+	justify-content: center
 
-  &:after
-    content: ''
-    position: absolute
-    right: -10.5px
-    width: 0
-    height: 0
-    border:
-      top: 24px solid #B51827
-      right: 10.5px solid transparent
+	&:after
+		content: ''
+		position: absolute
+		right: -10.5px
+		width: 0
+		height: 0
+		border:
+		top: 24px solid #B51827
+		right: 10.5px solid transparent
 
 .bg-red
-  background: #B51827
+	background: #B51827
 
 .bg-green
-  background: #02D656
-  color: #333132
+	background: #02D656
+	color: #333132
 
-  &:after
-    border-top-color: #02D656
+	&:after
+		border-top-color: #02D656
 
 .news-card__img
-  position: relative
-  width: 100%
-  height: 180px
-  display: flex
-  align-items: center
-  justify-content: center
+	position: relative
+	width: 100%
+	height: 180px
+	display: flex
+	align-items: center
+	justify-content: center
 
-  img
-    width: 100%
-    height: 100%
-    object-fit: cover
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
 
 .news-card__body
-  padding: 24px 16px 28px
+	padding: 24px 16px 28px
 
 .news-card__title
-  font-size: 16px
-  font-weight: 500
-  color: #333132
-  margin: 0 0 48px
+	font-size: 16px
+	font-weight: 500
+	color: #333132
+	margin: 0 0 48px
 
 .price-wrapper
-  width: 100%
-  display: flex
-  align-items: center
-  flex-wrap: wrap
-  font-size: 24px
-  font-weight: 500
-  margin: 0 0 4px
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	font-size: 24px
+	font-weight: 500
+	margin: 0 0 4px
 
 .old-price
-  text-decoration: line-through
-  color: #817A6C
-  margin: 0 0 0 8px
-  font-size: 12px
-  font-weight: normal
+	text-decoration: line-through
+	color: #817A6C
+	margin: 0 0 0 8px
+	font-size: 12px
+	font-weight: normal
 
 .list-check
-  font-size: 12px
-  display: flex
-  flex-wrap: wrap
-  align-items: center
+	font-size: 12px
+	display: flex
+	flex-wrap: wrap
+	align-items: center
 
-  li
-    margin: 0 8px 0 0
-    position: relative
-    display: flex
-    align-items: center
+	li
+		margin: 0 8px 0 0
+		position: relative
+		display: flex
+		align-items: center
 
-    &:last-child
-      margin: 0
+		&:last-child
+			margin: 0
 
-    &:before
-      content: ''
-      width: 11px
-      height: 8px
-      display: inline-block
-      margin: 0 6px 0 0
-      background: url("../img/check.svg") no-repeat center
-        size: cover
+		&:before
+			content: ''
+			width: 11px
+			height: 8px
+			display: inline-block
+			margin: 0 6px 0 0
+			background: url("../img/check.svg") no-repeat center
+			size: cover
 
 .btn-add-card
-  width: 100%
-  display: flex
-  align-items: center
-  justify-content: center
-  padding: 12px
-  border-top: 1px solid #E4E5E6
-  color: #333132
-  font-size: 12px
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	padding: 12px
+	border-top: 1px solid #E4E5E6
+	color: #333132
+	font-size: 12px
 
-  &:hover
-    color: $accent
+	&:hover
+		color: $accent
 
-  .svg-icon
-    margin: 0 9px 0 0
-    width: 15px
-    height: 13px
-    fill: #817A6C
+	.svg-icon
+		margin: 0 9px 0 0
+		width: 15px
+		height: 13px
+		fill: #817A6C
 
 .slick-prev
-  left: 0
+	left: 0
 
 .slick-next
-  right: 0
+	right: 0
 
 .slick-arrow
-  z-index: 1
-  opacity: 1
-  width: 13.5px
-  height: 27px
+	z-index: 1
+	opacity: 1
+	width: 13.5px
+	height: 27px
 
-  svg
-    width: 100%
-    height: 100%
-    stroke: #B51827
+	svg
+		width: 100%
+		height: 100%
+		stroke: #B51827
 
-  &:before
-    display: none
+	&:before
+		display: none
 
-  &:hover
-    svg
-      stroke: #C0BCB5
+	&:hover
+		svg
+			stroke: #C0BCB5
 
 //about-articles
 .about-articles
-  padding: 32px 0
-  position: relative
+	padding: 32px 0
+	position: relative
 
-  .container
-    justify-content: space-between
+	.container
+		justify-content: space-between
 
-  &:before
-    content: ''
-    position: absolute
-    right: 0
-    bottom: 0
-    width: 100%
-    height: 260px
-    background: url("../img/decor-bg2.svg") no-repeat center
-      size: 100%
-    transform: rotate(-180deg)
+	&:before
+		content: ''
+		position: absolute
+		right: 0
+		bottom: 0
+		width: 100%
+		height: 260px
+		background: url("../img/decor-bg2.svg") no-repeat center
+		size: 100%
+		transform: rotate(-180deg)
 
-  &:after
-    content: ''
-    position: absolute
-    width: 100%
-    left: 0
-    height: 260px
-    top: 0
-    background: url("../img/decor-bg2.svg") no-repeat center
-      size: 100%
+	&:after
+		content: ''
+		position: absolute
+		width: 100%
+		left: 0
+		height: 260px
+		top: 0
+		background: url("../img/decor-bg2.svg") no-repeat center
+		size: 100%
 
 .about-articles__box
-  width: 49%
-  background: #fff
-  border: 4px solid #817A6C
-  padding: 32px 48px 48px
+	width: 49%
+	background: #fff
+	border: 4px solid #817A6C
+	padding: 32px 48px 48px
 
-  h2
-    margin: 0 0 24px
+	h2
+		margin: 0 0 24px
 
-  .btn
-    margin: 32px 0 0
+	.btn
+		margin: 32px 0 0
 
 .box-text
-  line-height: 24px
+	line-height: 24px
 
-  p
-    margin: 0 0 20px
+	p
+		margin: 0 0 20px
 
-    &:last-child
-      margin: 0
+		&:last-child
+			margin: 0
 
 .articles-item__name
-  color: #333132
-  font-weight: 500
-  margin: 0 0 10px
+	color: #333132
+	font-weight: 500
+	margin: 0 0 10px
 
 .articles-item
-  margin: 0 0 30px
+	margin: 0 0 30px
 
-  &:last-child
-    margin: 0
+	&:last-child
+		margin: 0
 
 .category-news
-  background: #fff
-  margin: 0 16px 0 0
-  border: 1px solid #C0BCB5
-    radius: 4px
-  padding: 0 16px
-  color: #817A6C
-  font-size: 12px
-  height: 24px
-  display: flex
-  align-items: center
+	background: #fff
+	margin: 0 16px 0 0
+	border: 1px solid #C0BCB5
+	radius: 4px
+	padding: 0 16px
+	color: #817A6C
+	font-size: 12px
+	height: 24px
+	min-width: 86px
+	text-align: center
+	display: flex
+	justify-content: center
+	align-items: center
 
 .line-wrapper
-  width: 100%
-  display: flex
-  align-items: center
-  flex-wrap: wrap
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
 
 .date-news
-  display: flex
-  align-items: center
-  color: #817A6C
-  font-size: 12px
+	display: flex
+	align-items: center
+	color: #817A6C
+	font-size: 12px
 
-  .svg-icon
-    width: 12px
-    height: 11px
-    margin: 0 10px 0 0
-    fill: #817A6C
+	.svg-icon
+		width: 12px
+		height: 11px
+		margin: 0 10px 0 0
+		fill: #817A6C
 
 .w-100
-  width: 100%
+	width: 100%
 
 //gallery-clients
 .gallery-clients
-  padding: 32px 0
+	padding: 32px 0
 
-  h2
-    text-align: center
-    margin: 0 auto 32px
+	h2
+		text-align: center
+		margin: 0 auto 32px
 
 .gallery-clients__box
-  max-width: 504px
-  width: 100%
-  margin: 0 auto 16px
-  background: #fff
-  box-shadow: 0 2px 4px rgba(129, 122, 108, 0.16), 0 0 24px rgba(129, 122, 108, 0.16)
+	max-width: 504px
+	width: 100%
+	margin: 0 auto 16px
+	background: #fff
+	box-shadow: 0 2px 4px rgba(129, 122, 108, 0.16), 0 0 24px rgba(129, 122, 108, 0.16)
 
 .gallery-clients__box-img
-  width: 100%
-  height: 330px
+	width: 100%
+	height: 330px
 
-  img
-    width: 100%
-    height: 100%
-    object-fit: cover
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
 
 .gallery-clients__box-body
-  padding: 24px 32px 50px
-  font-size: 12px
+	padding: 24px 32px 50px
+	font-size: 12px
 
 .links-social
-  color: #333132
-  margin: 0 0 8px
-  font-size: 16px
-  font-weight: 500
+	color: #333132
+	margin: 0 0 8px
+	font-size: 16px
+	font-weight: 500
 
 .gallery-clients-slider, .article-gallery__slider
-  padding: 0 70px
+	padding: 0 70px
 
 //.consultation
 .consultation
-  padding: 48px 0
+	padding: 48px 0
 
-  &:before
-    background: url("../img/decor-bg3.svg") no-repeat center top
-      size: 100%
+	&:before
+		background: url("../img/decor-bg3.svg") no-repeat center top
+		size: 100%
 
-  h2
-    max-width: 415px
-    width: 100%
+	h2
+		max-width: 415px
+		width: 100%
 
-  .container
-    align-items: center
-    justify-content: space-between
+	.container
+		align-items: center
+		justify-content: space-between
 
 .form
-  max-width: 544px
-  width: 100%
+	max-width: 544px
+	width: 100%
 
 //footer
 footer
-  background: #333132 url("../img/footer-bg.png") repeat
-  color: #fff
-  background-blend-mode: multiply
-  position: relative
-  padding: 32px 0 80px
+	background: #333132 url("../img/footer-bg.png") repeat
+	color: #fff
+	background-blend-mode: multiply
+	position: relative
+	padding: 32px 0 80px
 
-  .container
-    justify-content: space-between
+	.container
+		justify-content: space-between
 
-  .phone
-    justify-content: flex-end
-    color: #fff
-    font-size: 16px
-    font-weight: 500
-    margin: 0 0 16px
+	.phone
+		justify-content: flex-end
+		color: #fff
+		font-size: 16px
+		font-weight: 500
+		margin: 0 0 16px
 
-    .svg-icon
-      fill: #817A6C
+		.svg-icon
+			fill: #817A6C
 
-  .list-social
-    flex-direction: column
-    align-items: flex-start
+	.list-social
+		flex-direction: column
+		align-items: flex-start
 
-    li
-      margin: 0 0 8px
+		li
+			margin: 0 0 8px
 
-      a
-        .svg-icon
-          margin: 0 8px 0 0
-          fill: #817A6C
-
+			a
+				.svg-icon
+					margin: 0 8px 0 0
+					fill: #817A6C
 
 .footer-box
-  h3
-    font-weight: 500
-    color: #E4E5E6
-    margin: 0 0 8px
+	h3
+		font-weight: 500
+		color: #E4E5E6
+		margin: 0 0 8px
+	&:nth-child(3)
+		margin: 0 0 0 40px
 
 .footer-menu
-  font-size: 12px
-  line-height: 24px
+	font-size: 12px
+	line-height: 24px
 
-  li
-    a
-      color: #C0BCB5
+	li
+		a
+			color: #C0BCB5
 
 .btn-grey
-  box-shadow: 0 0 4px rgba(51, 49, 50, 0.32), 0px 4px 8px rgba(51, 49, 50, 0.16)
-  color: #fff
-  height: 48px
-  background: #817A6C
+	box-shadow: 0 0 4px rgba(51, 49, 50, 0.32), 0px 4px 8px rgba(51, 49, 50, 0.16)
+	color: #fff
+	height: 48px
+	background: #817A6C
 
 .developer
-  margin: 32px 0 0
+	margin: 32px 0 0
 
-  img
-    margin: 0 0 0 auto
+	img
+		margin: 0 0 0 auto
 
 //mobile-menu
 .mobile-menu
-  display: none
-  position: fixed
-  left: 0
-  top: 0
-  max-width: 280px
-  width: 100%
-  background: #ffff
-  height: 100%
-  overflow-y: auto
-  z-index: 7
-  box-shadow: 0 2px 4px rgba(129, 122, 108, 0.16), 0 0 24px rgba(129, 122, 108, 0.16)
-  padding: 30px 20px
+	display: none
+	position: fixed
+	left: 0
+	top: 0
+	max-width: 280px
+	width: 100%
+	background: #ffff
+	height: 100%
+	overflow-y: auto
+	z-index: 7
+	box-shadow: 0 2px 4px rgba(129, 122, 108, 0.16), 0 0 24px rgba(129, 122, 108, 0.16)
+	padding: 30px 20px
 
-  .logo
-    margin: 0 auto 30px
+	.logo
+		margin: 0 auto 30px
 
-  .menu
-    li
-      margin: 0 0 10px
+	.menu
+		li
+			margin: 0 0 10px
+			width: 100%
+			a
+				&:hover
+					color: $accent
 
-      a
-        &:hover
-          color: $accent
+	.home-menu
+		margin: 10px 0
+		padding: 10px 0
+		border:
+		top: 1px solid $brown
+		bottom: 1px solid $brown
 
-  .home-menu
-    margin: 10px 0
-    padding: 10px 0
-    border:
-      top: 1px solid $brown
-      bottom: 1px solid $brown
+		li
+			width: 100%
+			margin: 0 0 10px
 
-    li
-      width: 100%
-      margin: 0 0 10px
+			a
+				font-size: 14px
+				color: $brown
 
-      a
-        font-size: 14px
-        color: $brown
+				&:hover
+					color: $accent
 
-        &:hover
-          color: $accent
+	.list-social
+		.svg-icon
+			fill: $brown
 
-  .list-social
-    .svg-icon
-      fill: $brown
+.menu-cabinet
+	font-size: 12px
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: space-between
+	flex-wrap: wrap
+	border-bottom: 1px solid #817A6C
+	margin: 0 0 10px
 
+	li
+		margin: 0 0 10px
+		a
+			display: flex
+			align-items: center
+			color: #333132
+			.svg-icon
+				width: 12px
+				height: 14px
+				fill: #817A6C
+				margin: 0 8px 0 0
 
 .btn-close
-  position: relative
-  width: 20px
-  height: 20px
-  cursor: pointer
-  margin: 0 0 20px auto
+	position: relative
+	width: 20px
+	height: 20px
+	cursor: pointer
+	margin: 0 0 20px auto
 
-  &:before, &:after
-    content: ''
-    position: absolute
-    left: 10px
-    top: 0
-    width: 1px
-    height: 100%
-    background: $accent
+	&:before, &:after
+		content: ''
+		position: absolute
+		left: 10px
+		top: 0
+		width: 1px
+		height: 100%
+		background: $accent
 
-  &:before
-    transform: rotate(45deg)
+	&:before
+		transform: rotate(45deg)
 
-  &:after
-    transform: rotate(135deg)
+	&:after
+		transform: rotate(135deg)
 
 .btn-burger
-  display: none
-  flex-direction: column
-  align-items: center
-  justify-content: space-between
-  width: 20px
-  height: 14px
-  cursor: pointer
-  margin: 0 0 0 10px
+	display: none
+	flex-direction: column
+	align-items: center
+	justify-content: space-between
+	width: 20px
+	height: 14px
+	cursor: pointer
+	margin: 0 0 0 10px
 
-  span
-    width: 100%
-    height: 1px
-    background: $accent
+	span
+		width: 100%
+		height: 1px
+		background: $accent
 
 //pagination
 .pagination
-  width: 100%
-  display: flex
-  align-items: center
-  justify-content: center
-  flex-wrap: wrap
-  margin: 0 auto 27px
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-wrap: wrap
+	margin: 0 auto 27px
 
-  li
-    margin: 0 32px 0 0
+	li
+		margin: 0 32px 0 0
 
-    &:last-child
-      margin: 0
+		&:last-child
+			margin: 0
 
-    a
-      display: flex
-      align-items: center
-      justify-content: center
-      color: #333132
-      font-size: 12px
+		a
+			display: flex
+			align-items: center
+			justify-content: center
+			color: #333132
+			font-size: 12px
 
-      .svg-icon
-        margin: 0 13px 0 0
-        width: 5px
-        height: 10px
-        fill: none
-        stroke: #000000
+			.svg-icon
+				margin: 0 13px 0 0
+				width: 5px
+				height: 10px
+				fill: none
+				stroke: #000000
 
-      &:hover
-        color: $accent
+			&:hover
+				color: $accent
 
 //.delivery
 .delivery
-  padding: 0 0 48px
+	padding: 0 0 48px
 
-  .container
-    flex-direction: column
-    align-items: center
+	.container
+		flex-direction: column
+		align-items: center
 
 .delivery-content
-  width: 100%
-  max-width: 592px
-  margin: 0 auto
+	width: 100%
+	max-width: 592px
+	margin: 0 auto
 
 .delivery-box
-  margin: 0 0 24px
+	margin: 0 0 24px
 
-  &:last-child
-    margin: 0
+	&:last-child
+		margin: 0
 
-  h3
-    margin: 0 0 16px
-    font-size: 24px
-    font-weight: 500
+	h3
+		margin: 0 0 16px
+		font-size: 24px
+		font-weight: 500
 
-  h4
-    font-size: 18px
-    font-weight: 500
-    margin: 0 0 16px
+	h4
+		font-size: 18px
+		font-weight: 500
+		margin: 0 0 16px
 
-  ul
-    li
-      width: 100%
+	ul
+		li
+			width: 100%
 
-  .list-dots
-    margin: 0 0 16px
+	.list-dots
+		margin: 0 0 16px
 
-    li
-      margin: 0 0 16px
-      align-items: flex-start
+		li
+			margin: 0 0 16px
+			align-items: flex-start
 
-      &:before
-        margin: 10px 10px 0 0
+			&:before
+				margin: 10px 10px 0 0
 
-      &:last-child
-        margin: 0
+			&:last-child
+				margin: 0
 
 //catalog-section
 .catalog-section
-  h2
-    text-align: center
-    margin: 0 auto 32px
+	h2
+		text-align: center
+		margin: 0 auto 32px
 
 .list-number
-  counter-reset: item
+	counter-reset: item
 
-  li
-    margin: 0 0 16px
-    display: flex
-    align-items: flex-start
+	li
+		margin: 0 0 16px
+		display: flex
+		align-items: flex-start
 
-    &:last-child
-      margin: 0
+		&:last-child
+			margin: 0
 
-    &:before
-      content: counters(item, ".") ". "
-      counter-increment: item
-      display: inline-block
-      margin: 0 10px 0 0
+		&:before
+			content: counters(item, ".") ". "
+			counter-increment: item
+			display: inline-block
+			margin: 0 10px 0 0
 
 //about
 .subtitle
-  margin: 0 auto 24px
-  max-width: 592px
-  width: 100%
-  font-size: 24px
-  font-weight: 500
+	margin: 0 auto 24px
+	max-width: 592px
+	width: 100%
+	font-size: 24px
+	font-weight: 500
 
 .img-wrapper
-  margin: 0 auto 24px
-  display: flex
-  align-items: center
-  justify-content: center
-  max-width: 800px
-  width: 100%
-  max-height: 400px
-  overflow: hidden
+	margin: 0 auto 24px
+	display: flex
+	align-items: center
+	justify-content: center
+	max-width: 800px
+	width: 100%
+	max-height: 400px
+	overflow: hidden
 
-  img
-    width: 100%
-    height: 100%
-    object-fit: cover
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
 
 //.dealers
 .dealers
-  .container
-    align-items: flex-start
+	.container
+		align-items: flex-start
 
-  h2
-    margin: 20px 0 0
+	h2
+		margin: 20px 0 0
 
 //partners
 .partners
-  .img-wrapper
-    max-height: 428px
+	.img-wrapper
+		max-height: 428px
 
 .mail
-  color: $accent
-  text-decoration: underline
+	color: $accent
+	text-decoration: underline
 
 .phone-group
-  display: flex
-  flex-wrap: wrap
-  align-items: center
+	display: flex
+	flex-wrap: wrap
+	align-items: center
 
 .phone-partners
-  color: #333132
-  margin: 0 5px 0 0
+	color: #333132
+	margin: 0 5px 0 0
 
-  &:last-child
-    margin: 0
+	&:last-child
+		margin: 0
 
-  &:hover
-    color: $accent
+	&:hover
+		color: $accent
 
 .list-contacts
-  li
-    display: flex
-    flex-wrap: wrap
-    align-items: center
-    margin: 0 0 8px
+	li
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		margin: 0 0 8px
 
-    &:last-child
-      margin: 0
+		&:last-child
+			margin: 0
 
-    a
-      margin: 0 5px 0 0
+		a
+			margin: 0 5px 0 0
 
-      &:last-child
-        margin: 0
+			&:last-child
+				margin: 0
 
 .dealers-box
-  margin: 32px 0 0
+	margin: 32px 0 0
 
-  h3
-    font-size: 24px
-    font-weight: 600
-    margin: 0 0 16px
+	h3
+		font-size: 24px
+		font-weight: 600
+		margin: 0 0 16px
 
 .maps
-  width: 100%
-  max-width: 800px
-  margin: 32px auto 0
-  height: 400px
+	width: 100%
+	max-width: 800px
+	margin: 32px auto 0
+	height: 400px
 
-  iframe
-    width: 100%
-    height: 100%
+	iframe
+		width: 100%
+		height: 100%
 
 .list-requisites
-  li
-    width: 100%
-    display: flex
-    align-items: center
-    flex-wrap: wrap
-    margin: 0 0 16px
+	li
+		width: 100%
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		margin: 0 0 16px
 
-    &:last-child
-      margin: 0
+		&:last-child
+			margin: 0
 
-    p
-      color: #817A6C
-      min-width: 80px
-      margin: 0
+		p
+			color: #817A6C
+			min-width: 80px
+			margin: 0
 
 //news-section
 .news-section
-  padding: 0 0 48px
+	padding: 0 0 48px
 
 .news-wrapper
-  max-width: 1008px
-  margin: 0 auto
+	max-width: 1008px
+	margin: 0 auto
 
 .btn-load
-  margin: 32px auto 0
+	margin: 32px auto 0
 
 .news-box
-  width: 100%
-  margin: 0 0 32px
-  display: none
-  align-items: flex-start
-  flex-wrap: wrap
+	width: 100%
+	margin: 0 0 32px
+	display: none
+	align-items: flex-start
+	flex-wrap: wrap
 
-  &:nth-child(-n+5)
-    display: flex
+	&:nth-child(-n+5)
+		display: flex
 
-  &:last-child
-    margin: 0
+	&:last-child
+		margin: 0
 
 .news-box__photo
-  width: 384px
-  height: 240px
-  overflow: hidden
-  display: flex
-  align-items: center
-  justify-content: center
+	width: 384px
+	height: 240px
+	overflow: hidden
+	display: flex
+	align-items: center
+	justify-content: center
 
-  img
-    width: 100%
-    height: 1005px
-    object-fit: cover
+	img
+		width: 100%
+		height: 1005px
+		object-fit: cover
 
 .news-box__content
-  width: calc(100% - 384px)
-  padding: 0 0 0 32px
+	width: calc(100% - 384px)
+	padding: 0 0 0 32px
 
-  .box-text
-    margin: 16px 0 0
+	.box-text
+		margin: 16px 0 0
 
 .news-box__title
-  color: #333132
-  font-size: 24px
-  font-weight: 500
-  margin: 0 0 8px
-  max-width: 592px
+	color: #333132
+	font-size: 24px
+	font-weight: 500
+	margin: 0 0 8px
+	max-width: 592px
 
 //article-gallery
 .article-gallery
-  margin: 28px 0 0
-  width: 100%
+	margin: 28px 0 0
+	width: 100%
 
-  h4
-    margin: 0 auto 24px
-    font-size: 18px
-    text-align: center
-    font-weight: 500
+	h4
+		margin: 0 auto 24px
+		font-size: 18px
+		text-align: center
+		font-weight: 500
 
 .article-gallery__item
-  display: flex
-  align-items: center
-  justify-content: center
-  margin: 0 auto 24px
-  max-width: 94%
-  height: 330px
-  overflow: hidden
+	display: flex
+	align-items: center
+	justify-content: center
+	margin: 0 auto 24px
+	max-width: 94%
+	height: 330px
+	overflow: hidden
 
-  img
-    width: 100%
-    height: 100%
-    object-fit: cover
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
 
 //form-sorting
 .form-sorting
-  width: 100%
-  display: flex
-  align-items: flex-start
-  flex-wrap: wrap
-  justify-content: center
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	justify-content: center
 
-  label
-    margin: 0 16px 32px 0
-    width: 264px
+	label
+		margin: 0 16px 32px 0
+		width: 264px
 
-  select
-    background-position: 94% center
+	select
+		background-position: 94% center
 
-  button
-    margin: 0 0 32px
-    max-width: 142px
-    width: 100%
+	button
+		margin: 0 0 32px
+		max-width: 142px
+		width: 100%
 
 //catalog-wrapper
 .catalog-wrapper
-  padding: 16px 0 48px
-  width: 100%
-  background: url("../img/decor-bg4.svg") no-repeat center
-    size: 100%
+	padding: 16px 0 48px
+	width: 100%
+	background: url("../img/decor-bg4.svg") no-repeat center
+	size: 100%
 
-  .container
-    padding: 0 65px
+	.container
+		padding: 0 65px
 
-  .wrapper-row
-    width: calc(100% - 336px)
-    padding: 0 0 0 32px
+	.wrapper-row
+		width: calc(100% - 336px)
+		padding: 0 0 0 32px
 
-  h3
-    font-size: 24px
-    margin: 0 0 16px
+	h3
+		font-size: 24px
+		margin: 0 0 16px
 
-  .news-card
-    margin: 0 0 32px
-    width: 100%
+	.news-card
+		margin: 0 0 32px
+		width: 100%
 
 .catalog-wrapper__content
-  max-width: 336px
-  width: 100%
+	max-width: 336px
+	width: 100%
 
 .col-3
-  width: 33.3%
-  padding: 0 8px
+	width: 33.3%
+	padding: 0 8px
 
 .col-4
-  width: 25%
-  padding: 0 8px
+	width: 25%
+	padding: 0 8px
 
 .wrapper-row
-  display: flex
-  align-items: flex-start
-  flex-wrap: wrap
-  width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	width: 100%
 
 .row
-  display: flex
-  align-items: stretch
-  flex-wrap: wrap
-  margin: 0 -8px
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+	margin: 0 -8px
 
 //category-section
 .category-section
-  padding: 0 0 48px
+	padding: 0 0 48px
 
-  .news-card
-    margin: 0 auto 16px
+	.news-card
+		margin: 0 auto 16px
 
-  .container
-    padding: 0 110px
+	.container
+		padding: 0 110px
 
 .btn-load-card
-  margin: 16px auto 0
+	margin: 16px auto 0
 
 .category-col
-  display: none
+	display: none
 
-  &:nth-child(-n+16)
-    display: block
+	&:nth-child(-n+16)
+		display: block
 
-  .news-card
-    width: 100%
+	.news-card
+		width: 100%
 
 //.product
 .product
-  padding: 0 0 48px
+	padding: 0 0 48px
 
 .product-wrapper
-  display: flex
-  align-items: flex-start
-  flex-wrap: wrap
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
 
 .product-photo
-  width: calc(100% - 379px)
-  padding: 0 32px 0 0
+	width: calc(100% - 379px)
+	padding: 0 32px 0 0
 
 .product-slider-max__item
-  width: 100%
-  display: flex
-  align-items: center
-  justify-content: center
-  position: relative
-  height: 400px
-  overflow: hidden
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	position: relative
+	height: 400px
+	overflow: hidden
 
 .photo-max
-  width: 100%
-  height: 100%
-  object-fit: cover
+	width: 100%
+	height: 100%
+	object-fit: cover
 
 .product-slider-max__schema
-  position: absolute
-  left: 0
-  top: 0
-  height: 100%
-  background: rgba(#333132, .8)
-  max-width: 176px
-  width: 100%
-  display: flex
-  align-items: center
-  justify-content: center
+	position: absolute
+	left: 0
+	top: 0
+	height: 100%
+	background: rgba(#333132, .8)
+	max-width: 176px
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
 
 .product-slider-min
-  margin: 8px 0 0
-  padding: 0 148px
-  box-sizing: border-box
+	margin: 8px 0 0
+	padding: 0 148px
+	box-sizing: border-box
 
-  .slick-current
-    .product-slider-min__item
-      &:before
-        border-color: $accent
+	.slick-current
+		.product-slider-min__item
+			&:before
+				border-color: $accent
 
 .product-slider-min__item
-  display: flex
-  align-items: center
-  justify-content: center
-  width: 120px
-  height: 80px
-  overflow: hidden
-  transition: .3s ease
-  position: relative
-  margin: 0 auto
-  cursor: pointer
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 120px
+	height: 80px
+	overflow: hidden
+	transition: .3s ease
+	position: relative
+	margin: 0 auto
+	cursor: pointer
 
-  &:before
-    content: ''
-    position: absolute
-    left: 0
-    top: 0
-    width: 100%
-    height: 100%
-    border: 4px solid transparent
-    transition: .3s ease
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		border: 4px solid transparent
+		transition: .3s ease
 
-  img
-    width: 100%
-    height: 100%
-    object-fit: cover
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
 
 .product-information
-  width: 379px
+	width: 379px
 
-  .price-wrapper
-    align-items: flex-start
-    font-size: 36px
+	.price-wrapper
+		align-items: flex-start
+		font-size: 36px
 
-  .old-price
-    text-decoration: none
-    margin: 5px 0 0 16px
+	.old-price
+		text-decoration: none
+		margin: 5px 0 0 16px
 
-  .list-check
-    color: #817A6C
+	.list-check
+		color: #817A6C
 
-  .list-dots
-    font-size: 12px
+	.list-dots
+		font-size: 12px
 
-  .btn
-    margin: 16px 0 28px
-    width: 100%
+	.btn
+		margin: 16px 0 28px
+		width: 100%
 
 .list-characteristics
-  width: 100%
-  line-height: 24px
-  margin: 0 0 24px
+	width: 100%
+	line-height: 24px
+	margin: 0 0 24px
 
-  li
-    display: flex
-    align-items: center
-    flex-wrap: wrap
+	li
+		display: flex
+		align-items: center
+		flex-wrap: wrap
 
-    p
-      color: #817A6C
-      min-width: 140px
+		p
+			color: #817A6C
+			min-width: 140px
 
 .links-red, .color-accent
-  color: $accent
+	color: $accent
 
 .product-info-box
-  margin: 0 0 24px
+	margin: 0 0 24px
 
-  &:last-child
-    margin: 0
+	&:last-child
+		margin: 0
 
-  h3
-    font-size: 24px
-    font-weight: 500
-    margin: 0 0 16px
+	h3
+		font-size: 24px
+		font-weight: 500
+		margin: 0 0 16px
 
-  .location
-    color: $accent
+	.location
+		color: $accent
 
-    .svg-icon
-      fill: $accent
+		.svg-icon
+			fill: $accent
 
-  h4
-    margin: 0 0 4px
-    font-size: 18px
-    font-weight: 500
+	h4
+		margin: 0 0 4px
+		font-size: 18px
+		font-weight: 500
 
 .product-info-box__line
-  display: flex
-  flex-wrap: wrap
-  align-items: center
-  font-size: 12px
-  margin: 0 0 4px
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	font-size: 12px
+	margin: 0 0 4px
 
-  span
-    margin: 0 8px 0 0
-    color: $brown
+	span
+		margin: 0 8px 0 0
+		color: $brown
 
 .img-pay
-  border: 1px solid #C0BCB5
-    radius: 4px
-  max-width: 180px
-  width: 100%
-  overflow: hidden
-  display: flex
-  align-items: center
-  justify-content: center
-  margin: 16px 0 0
+	border: 1px solid #C0BCB5
+	radius: 4px
+	max-width: 180px
+	width: 100%
+	overflow: hidden
+	display: flex
+	align-items: center
+	justify-content: center
+	margin: 16px 0 0
 
 .product-info-box-delivery
-  margin: 32px 0 0
+	margin: 32px 0 0
 
-  &:last-child
-    margin: 32px 0 0
+	&:last-child
+		margin: 32px 0 0
 
 //.other-goods
 .other-goods
-  background: url("../img/decor-bg5.svg") no-repeat center
-    size: 100%
-  padding: 32px 0 0
+	background: url("../img/decor-bg5.svg") no-repeat center
+	size: 100%
+	padding: 32px 0 0
 
-  h2
-    text-align: center
+	h2
+		text-align: center
 
 .other-goods-wrapper
-  width: 100%
-  display: flex
-  align-items: flex-start
-  justify-content: center
-  flex-wrap: wrap
+	width: 100%
+	display: flex
+	align-items: flex-start
+	justify-content: center
+	flex-wrap: wrap
 
-  .news-card
-    margin: 32px 12px 0
+	.news-card
+		margin: 32px 12px 0
 
 .consultation-basket
-  .container
-    align-items: flex-start
+	.container
+		align-items: flex-start
 
-  h2
+	h2
 
-    max-width: calc(100% - 544px)
-    padding: 10px 32px 0 0
+		max-width: calc(100% - 544px)
+		padding: 10px 32px 0 0
 
 //.basket
 .basket
-  padding: 0 0 48px
-  background: url("../img/decor-bg6.svg") no-repeat center bottom
-    size: cover
+	padding: 0 0 48px
+	background: url("../img/decor-bg6.svg") no-repeat center bottom
+	size: cover
 
 .registration-product
-  box-shadow: 0 2px 4px rgba(129, 122, 108, 0.16), 0px 0px 24px rgba(129, 122, 108, 0.16)
-  background: #fff
-  padding: 16px 24px 24px
-  width: 384px
+	box-shadow: 0 2px 4px rgba(129, 122, 108, 0.16), 0px 0px 24px rgba(129, 122, 108, 0.16)
+	background: #fff
+	padding: 16px 24px 24px
+	width: 384px
 
-  .btn
-    width: 100%
+	.btn
+		width: 100%
 
-  h3
-    font-size: 24px
-    font-weight: 500
-    text-align: center
-    width: 100%
-    margin: 0 auto 24px
+	h3
+		font-size: 24px
+		font-weight: 500
+		text-align: center
+		width: 100%
+		margin: 0 auto 24px
 
-  label
-    margin: 0 0 24px
+	label
+		margin: 0 0 24px
 
 .total-line
-  width: 100%
-  display: flex
-  align-items: center
-  justify-content: space-between
-  flex-wrap: wrap
-  margin: 0 0 24px
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: space-between
+	flex-wrap: wrap
+	margin: 0 0 24px
 
-  span
-    font-weight: 500
+	span
+		font-weight: 500
 
 .total-sum
-  font-size: 24px
+	font-size: 24px
 
 .basket-content__wrap
-  width: calc(100% - 384px)
-  padding: 0 32px 0 0
+	width: calc(100% - 384px)
+	padding: 0 32px 0 0
 
 .basket-content
-  display: flex
-  align-items: flex-start
-  flex-wrap: wrap
-  width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	width: 100%
 
 .product-card
-  width: 100%
-  display: flex
-  align-items: flex-start
-  flex-wrap: wrap
-  box-shadow: 0 2px 4px rgba(129, 122, 108, 0.16), 0 0 24px rgba(129, 122, 108, 0.16)
-  background: #fff
-  margin: 0 0 32px
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	box-shadow: 0 2px 4px rgba(129, 122, 108, 0.16), 0 0 24px rgba(129, 122, 108, 0.16)
+	background: #fff
+	margin: 0 0 32px
 
 .product-card__img
-  display: flex
-  align-items: center
-  justify-content: center
-  overflow: hidden
-  width: 240px
-  height: 180px
+	display: flex
+	align-items: center
+	justify-content: center
+	overflow: hidden
+	width: 240px
+	height: 180px
 
-  img
-    width: 100%
-    height: 100%
-    object-fit: cover
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
 
 .product-card__body
-  width: calc(100% - 240px)
-  padding: 16px 32px 16px 24px
-  display: flex
-  align-items: flex-start
-  flex-wrap: wrap
-  justify-content: space-between
-  font-weight: 500
+	width: calc(100% - 240px)
+	padding: 16px 32px 16px 24px
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	justify-content: space-between
+	font-weight: 500
 
 .label-amount
-  max-width: 72px
+	max-width: 72px
 
-  input
-    text-align: center
-    color: #333132
+	input
+		text-align: center
+		color: #333132
 
-    &::placeholder
-      color: #333132
+		&::placeholder
+			color: #333132
 
 .product-card__it
-  max-width: 208px
-  width: 100%
+	max-width: 208px
+	width: 100%
 
 .product-card__title
-  color: #333132
-  margin: 0 0 8px
+	color: #333132
+	margin: 0 0 8px
 
 .article
-  color: #817A6C
-  font-size: 12px
-  font-weight: 400
+	color: #817A6C
+	font-size: 12px
+	font-weight: 400
 
 .btn-delete
-  display: flex
-  align-items: center
-  justify-content: center
-  fill: $accent
-  width: 16px
-  height: 16px
-  margin: 15px 0 0
+	display: flex
+	align-items: center
+	justify-content: center
+	fill: $accent
+	width: 16px
+	height: 16px
+	margin: 15px 0 0
 
 .cost
-  margin: 15px 0 0
+	margin: 15px 0 0
 
 .additional-goods
-  max-width: 768px
-  width: 100%
+	max-width: 768px
+	width: 100%
 
-  h2
-    text-align: center
+	h2
+		text-align: center
 
-  .news-card
-    margin: 32px auto 0
+	.news-card
+		margin: 32px auto 0
 
 .basket
-  .mobile-registration
-    display: none
+	.mobile-registration
+		display: none
 
-    .registration-product
-      display: block
+		.registration-product
+			display: block
 
 //delivery-order
 .delivery-order
-  padding: 0 0 48px
+	padding: 0 0 48px
 
 .attention
-  width: 100%
-  display: flex
-  align-items: flex-start
-  color: #817A6C
-  font-size: 12px
+	width: 100%
+	display: flex
+	align-items: flex-start
+	color: #817A6C
+	font-size: 12px
 
-  svg
-    fill: #E8A016
-    margin: 5px 9px 0 0
-    width: 14px
-    height: 12px
-    min-width: 14px
+	svg
+		fill: #E8A016
+		margin: 5px 9px 0 0
+		width: 14px
+		height: 12px
+		min-width: 14px
 
 .delivery-order-box
-  background: #fff
-  width: 100%
-  margin: 0 0 16px
-  box-shadow: 0 2px 4px rgba(129, 122, 108, 0.16), 0 0 24px rgba(129, 122, 108, 0.16)
-  padding: 16px 24px 24px
-  &:last-child
-    margin: 0
-  h3
-    margin: 0 0 24px
-    width: 100%
-    font-size: 24px
-    font-weight: 500
-  label
-    input
-      color: #333132
-      &::placeholder
-        color: #333132
-  .form-group
-    .label-street
-      max-width: 48%
-    .label-apartment, .label-home
-      max-width: 22.5%
-  .input-doc
-    input
-      &::placeholder
-        color: #C0BCB5
+	background: #fff
+	width: 100%
+	margin: 0 0 16px
+	box-shadow: 0 2px 4px rgba(129, 122, 108, 0.16), 0 0 24px rgba(129, 122, 108, 0.16)
+	padding: 16px 24px 24px
+	&:last-child
+		margin: 0
+	h3
+		margin: 0 0 24px
+		width: 100%
+		font-size: 24px
+		font-weight: 500
+	label
+		input
+			color: #333132
+			&::placeholder
+				color: #333132
+	.form-group
+		.label-street
+			max-width: 48%
+		.label-apartment, .label-home
+			max-width: 22.5%
+	.input-doc
+		input
+			&::placeholder
+				color: #C0BCB5
 
 .input-title
-  display: block
-  width: 100%
-  margin: 0 0 8px
+	display: block
+	width: 100%
+	margin: 0 0 8px
 
 //tabs
 .tabs__content
-  display: none
-  width: 100%
-  padding: 24px 0 0
-  .location
-    color: $accent
-    width: 100%
-    svg
-      fill: $accent
+	display: none
+	width: 100%
+	padding: 24px 0 0
+	.location
+		color: $accent
+		width: 100%
+		svg
+			fill: $accent
 
 .tabs__content.active
-  display: flex
-  flex-wrap: wrap
+	display: flex
+	flex-wrap: wrap
 
 .tabs
-  margin: 8px 0 0
-  display: flex
-  flex-direction: column
-  align-items: flex-start
+	margin: 8px 0 0
+	display: flex
+	flex-direction: column
+	align-items: flex-start
 
 .tabs__caption
-  display: flex
-  align-items: stretch
-  justify-content: flex-start
-  flex-wrap: wrap
-  border: 1px solid #C0BCB5
-    radius: 4px
-  font-weight: 500
-  cursor: pointer
-  li
-    text-align: center
-    display: flex
-    align-items: center
-    justify-content: center
-    padding: 8px 16px
-    position: relative
-    &:before
-      content: ''
-      position: absolute
-      right: 0
-      top: 50%
-      transform: translate(0,-50%)
-      width: 1px
-      height: 24px
-      background: #C0BCB5
-    &:last-child
-      &:before
-        display: none
-  .active
-    color: #fff
-    box-shadow: 0 4px 8px rgba(181, 24, 39, 0.32), inset 0px -4px 8px rgba(231, 34, 52, 0.8)
-    border-radius: 4px
-    background: #B51827
-    &:before
-      opacity: 0
-  .disabled
-    color: #C0BCB5
+	display: flex
+	align-items: stretch
+	justify-content: flex-start
+	flex-wrap: wrap
+	border: 1px solid #C0BCB5
+	radius: 4px
+	font-weight: 500
+	cursor: pointer
+	li
+		text-align: center
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 8px 16px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translate(0,-50%)
+			width: 1px
+			height: 24px
+			background: #C0BCB5
+		&:last-child
+			&:before
+				display: none
+	.active
+		color: #fff
+		box-shadow: 0 4px 8px rgba(181, 24, 39, 0.32), inset 0px -4px 8px rgba(231, 34, 52, 0.8)
+		border-radius: 4px
+		background: #B51827
+		&:before
+			opacity: 0
+	.disabled
+		color: #C0BCB5
 
 .list-delivery
-  width: 100%
-  display: flex
-  flex-wrap: wrap
-  line-height: 24px
-  margin: 0 0 24px
-  span
-    font-size: 24px
-    font-weight: 500
-    margin: 8px 0 0
-    display: block
-  li
-    width: 50%
+	width: 100%
+	display: flex
+	flex-wrap: wrap
+	line-height: 24px
+	margin: 0 0 24px
+	span
+		font-size: 24px
+		font-weight: 500
+		margin: 8px 0 0
+		display: block
+	li
+		width: 50%
 
 .delivery-order-box-data
-  .attention
-    margin: 0 0 24px
+	.attention
+		margin: 0 0 24px
 
 .modal__div
-  position: fixed
-  max-width: 600px
-  width: 100%
-  height: 100%
-  top: 45%
-  left: 50%
-  transform: translate(-50%, -50%)
-  z-index: 101
-  overflow: auto
-  justify-content: center
-  align-items: center
-  flex-direction: column
-  display: none
-  opacity: 0
+	position: fixed
+	max-width: 600px
+	width: 100%
+	height: 100%
+	top: 45%
+	left: 50%
+	transform: translate(-50%, -50%)
+	z-index: 101
+	overflow: auto
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	display: none
+	opacity: 0
 
 .modal__wrapper
-  padding: 32px 42.5px 45px
-  background: #fff
-  width: 100%
-  height: auto
-  overflow: auto
-  box-sizing: border-box
-  position: relative
-  h2
-    color: #000
-    margin: 0 0 24px
-  .tabs
-    margin: 0
-  .tabs__caption
-    font-size: 36px
-    font-weight: 500
-    color: #000000
-    width: 100%
-    border: none
-      radius: 0
-    li
-      padding: 0
-      margin: 0 16px 0 0
-      &:last-child
-        margin: 0
-      &:before
-        display: none
-    .active
-      color: $accent
-      background: #fff
-      box-shadow: none
-  .box-text
-    line-height: 32px
-  .line-wrapper
-    justify-content: space-between
-    .btn
-      margin: 32px 0 0
-      
+	padding: 32px 42.5px 45px
+	background: #fff
+	width: 100%
+	height: auto
+	overflow: auto
+	box-sizing: border-box
+	position: relative
+	h2
+		color: #000
+		margin: 0 0 24px
+	.tabs
+		margin: 0
+	.tabs__caption
+		font-size: 36px
+		font-weight: 500
+		color: #000000
+		width: 100%
+		border: none
+		radius: 0
+		li
+			padding: 0
+			margin: 0 16px 0 0
+			&:last-child
+				margin: 0
+			&:before
+				display: none
+		.active
+			color: $accent
+			background: #fff
+			box-shadow: none
+	.box-text
+		line-height: 32px
+	.line-wrapper
+		justify-content: space-between
+		.btn
+			margin: 32px 0 0
+
 .links-black
-  margin: 0 0 40px
-  font-weight: 500
-  color: #000000
+	margin: 0 0 40px
+	font-weight: 500
+	color: #000000
 
 .modal-form
-  width: 100%
-  .btn
-    width: 100%
-    margin: 28px auto 0
-  input
-    color: #333132
-    &::placeholder
-      color: #333132
+	width: 100%
+	.btn
+		width: 100%
+		margin: 28px auto 0
+	input
+		color: #333132
+		&::placeholder
+			color: #333132
 
 .list-city
-  width: 100%
-  line-height: 32px
-  li
-    a
-      color: #000000
+	width: 100%
+	line-height: 32px
+	li
+		a
+			color: #000000
 
 .overlay
-  z-index: 100
-  position: fixed
-  background-color: #000
-  opacity: 0.8
-  -moz-opacity: 0.8
-  filter: alpha(opacity = 80)
-  width: 100%
-  height: 100%
-  top: 0
-  left: 0
-  cursor: pointer
-  display: none
+	z-index: 100
+	position: fixed
+	background-color: #000
+	opacity: 0.8
+	-moz-opacity: 0.8
+	filter: alpha(opacity = 80)
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	cursor: pointer
+	display: none
 
 .btn-modal
-  color: #B51827
-  text-shadow: 0px 1px 0px rgba(74, 0, 0, 0.4)
-  box-shadow: 0px 4px 8px rgba(181, 24, 39, 0.32), inset 0px -4px 8px rgba(231, 34, 52, 0.8)
-  background: #fff
+	color: #B51827
+	text-shadow: 0px 1px 0px rgba(74, 0, 0, 0.4)
+	box-shadow: 0px 4px 8px rgba(181, 24, 39, 0.32), inset 0px -4px 8px rgba(231, 34, 52, 0.8)
+	background: #fff
 
 @import "media"
 // Всегда в конце

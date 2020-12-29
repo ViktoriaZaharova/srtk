@@ -34,7 +34,8 @@ $('.list-mark').slick({
             }
         }
     ]
-})
+});
+
 $(".news-slider").slick({
     slidesToShow: 4,
     prevArrow: '<button type="button" class="slick-prev"><svg width="16" height="29" viewBox="0 0 16 29" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
@@ -202,6 +203,8 @@ $('.btn-load-card').on('click', function (e) {
 
 // input mask
 $('input[name="when-issued"]').mask('99.99.9999');
+$('input[name="series_doc"]').mask('9999');
+$('input[name="number_doc"]').mask('999999');
 
 $.fn.setCursorPosition = function(pos) {
     if ($(this).get(0).setSelectionRange) {

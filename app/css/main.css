@@ -104,7 +104,7 @@ input {
   height: 48px;
   padding: 0 16px;
   border: 1px solid #C0BCB5;
-    border-radius: 4px;
+  radius: 4px;
   background: #fff;
   color: #C0BCB5;
   font-size: 16px;
@@ -132,7 +132,7 @@ select {
   border: 1px solid #C0BCB5;
   cursor: pointer;
   background: #fff url("../img/select-arrow.svg") no-repeat 96% center;
-    background-size: 10px; }
+  size: 10px; }
 
 select:disabled {
   opacity: .3; }
@@ -574,7 +574,7 @@ header {
     width: 100%;
     height: 260px;
     background: url("../img/decor-bg1.svg") no-repeat center top;
-      background-size: 100%;
+    size: 100%;
     z-index: 1; }
   .decor-bg .container {
     -webkit-box-align: start;
@@ -690,8 +690,8 @@ header {
     right: -10.5px;
     width: 0;
     height: 0;
-    border-top: 24px solid #B51827;
-    border-right: 10.5px solid transparent; }
+    top: 24px solid #B51827;
+    right: 10.5px solid transparent; }
 
 .bg-red {
   background: #B51827; }
@@ -779,7 +779,7 @@ header {
       display: inline-block;
       margin: 0 6px 0 0;
       background: url("../img/check.svg") no-repeat center;
-        background-size: cover; }
+      size: cover; }
 
 .btn-add-card {
   width: 100%;
@@ -839,7 +839,7 @@ header {
     width: 100%;
     height: 260px;
     background: url("../img/decor-bg2.svg") no-repeat center;
-      background-size: 100%;
+    size: 100%;
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg); }
   .about-articles:after {
@@ -850,7 +850,7 @@ header {
     height: 260px;
     top: 0;
     background: url("../img/decor-bg2.svg") no-repeat center;
-      background-size: 100%; }
+    size: 100%; }
 
 .about-articles__box {
   width: 49%;
@@ -883,14 +883,19 @@ header {
   background: #fff;
   margin: 0 16px 0 0;
   border: 1px solid #C0BCB5;
-    border-radius: 4px;
+  radius: 4px;
   padding: 0 16px;
   color: #817A6C;
   font-size: 12px;
   height: 24px;
+  min-width: 86px;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
@@ -964,7 +969,7 @@ header {
   padding: 48px 0; }
   .consultation:before {
     background: url("../img/decor-bg3.svg") no-repeat center top;
-      background-size: 100%; }
+    size: 100%; }
   .consultation h2 {
     max-width: 415px;
     width: 100%; }
@@ -1019,6 +1024,9 @@ footer {
   color: #E4E5E6;
   margin: 0 0 8px; }
 
+.footer-box:nth-child(3) {
+  margin: 0 0 0 40px; }
+
 .footer-menu {
   font-size: 12px;
   line-height: 24px; }
@@ -1054,14 +1062,15 @@ footer {
   .mobile-menu .logo {
     margin: 0 auto 30px; }
   .mobile-menu .menu li {
-    margin: 0 0 10px; }
+    margin: 0 0 10px;
+    width: 100%; }
     .mobile-menu .menu li a:hover {
       color: #B51827; }
   .mobile-menu .home-menu {
     margin: 10px 0;
     padding: 10px 0;
-    border-top: 1px solid #817A6C;
-    border-bottom: 1px solid #817A6C; }
+    top: 1px solid #817A6C;
+    bottom: 1px solid #817A6C; }
     .mobile-menu .home-menu li {
       width: 100%;
       margin: 0 0 10px; }
@@ -1072,6 +1081,38 @@ footer {
           color: #B51827; }
   .mobile-menu .list-social .svg-icon {
     fill: #817A6C; }
+
+.menu-cabinet {
+  font-size: 12px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 1px solid #817A6C;
+  margin: 0 0 10px; }
+  .menu-cabinet li {
+    margin: 0 0 10px; }
+    .menu-cabinet li a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      color: #333132; }
+      .menu-cabinet li a .svg-icon {
+        width: 12px;
+        height: 14px;
+        fill: #817A6C;
+        margin: 0 8px 0 0; }
 
 .btn-close {
   position: relative;
@@ -1444,7 +1485,7 @@ footer {
   padding: 16px 0 48px;
   width: 100%;
   background: url("../img/decor-bg4.svg") no-repeat center;
-    background-size: 100%; }
+  size: 100%; }
   .catalog-wrapper .container {
     padding: 0 65px; }
   .catalog-wrapper .wrapper-row {
@@ -1678,7 +1719,7 @@ footer {
 
 .img-pay {
   border: 1px solid #C0BCB5;
-    border-radius: 4px;
+  radius: 4px;
   max-width: 180px;
   width: 100%;
   overflow: hidden;
@@ -1700,7 +1741,7 @@ footer {
 
 .other-goods {
   background: url("../img/decor-bg5.svg") no-repeat center;
-    background-size: 100%;
+  size: 100%;
   padding: 32px 0 0; }
   .other-goods h2 {
     text-align: center; }
@@ -1733,7 +1774,7 @@ footer {
 .basket {
   padding: 0 0 48px;
   background: url("../img/decor-bg6.svg") no-repeat center bottom;
-    background-size: cover; }
+  size: cover; }
 
 .registration-product {
   -webkit-box-shadow: 0 2px 4px rgba(129, 122, 108, 0.16), 0px 0px 24px rgba(129, 122, 108, 0.16);
@@ -2000,7 +2041,7 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border: 1px solid #C0BCB5;
-    border-radius: 4px;
+  radius: 4px;
   font-weight: 500;
   cursor: pointer; }
   .tabs__caption li {
@@ -2103,7 +2144,7 @@ footer {
     color: #000000;
     width: 100%;
     border: none;
-      border-radius: 0; }
+    radius: 0; }
     .modal__wrapper .tabs__caption li {
       padding: 0;
       margin: 0 16px 0 0; }
@@ -2294,7 +2335,9 @@ footer {
   .col-4 {
     width: 33.3%; }
   .product-slider-max__item {
-    height: 300px; } }
+    height: 300px; }
+  .footer-box:nth-child(3) {
+    margin: 0; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 850px) {
@@ -2508,6 +2551,8 @@ footer {
               justify-content: flex-start; }
     footer .btn {
       margin: 0; }
+  .footer-box:nth-child(3) {
+    margin: 0 0 20px; }
   .developer img {
     margin: 0; }
   .product-slider-max__schema {
