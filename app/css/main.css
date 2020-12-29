@@ -1561,11 +1561,22 @@ footer {
       -ms-flex-align: start;
           align-items: flex-start;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  position: relative; }
 
 .product-photo {
   width: calc(100% - 379px);
-  padding: 0 32px 0 0; }
+  padding: 0 32px 0 0;
+  position: relative; }
+
+.fixed-box {
+  position: fixed;
+  top: 0;
+  width: calc(100% - 379px);
+  max-width: 805px; }
+
+.product-photo__items {
+  width: 100%; }
 
 .product-slider-max__item {
   width: 100%;
@@ -2253,7 +2264,9 @@ footer {
   .registration-product {
     width: 320px; }
   .basket-content__wrap {
-    width: calc(100% - 320px); } }
+    width: calc(100% - 320px); }
+  .fixed-box {
+    max-width: calc(100% - 440px); } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1100px) {
@@ -2467,7 +2480,11 @@ footer {
   .list-delivery span {
     font-size: 20px; }
   .delivery-order-box .form-group .label-apartment, .delivery-order-box .form-group .label-home {
-    max-width: 49%; } }
+    max-width: 49%; }
+  .fixed-box {
+    position: relative;
+    width: 100%;
+    max-width: none; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px) {

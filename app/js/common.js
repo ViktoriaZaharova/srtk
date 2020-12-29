@@ -270,3 +270,24 @@ $(document).ready(function () {
     });
 });
 //end
+
+// fixed gallery
+$(window).on('load resize', function() {
+    if ($(window).width() > 768) {
+        $(function () {
+            var topPos = $('.product-photo__items').offset().top;
+            $(window).scroll(function () {
+                var top = $(document).scrollTop(),
+                    pip = $('.other-goods').offset().top,
+                    height = $('.product-photo__items').outerHeight();
+                if (top > topPos && top < pip - height) {
+                    $('.product-photo__items').addClass('fixed-box').removeAttr("style");
+                } else if (top > pip - height) {
+                    $('.product-photo__items').removeClass('fixed-box').css({'position': 'absolute', 'bottom': '0'});
+                } else {
+                    $('.product-photo__items').removeClass('fixed-box');
+                }
+            });
+        });
+    }
+});

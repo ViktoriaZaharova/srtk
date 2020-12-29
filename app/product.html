@@ -18,9 +18,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
 
@@ -28,94 +29,790 @@
 
 <body>
 
-<div class="mobile-menu">
-    <div class="btn-close"></div>
+    <div class="mobile-menu">
+        <div class="btn-close"></div>
 
-    <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
-    <ul class="menu-cabinet">
-        <li>
-            <a href="#modalRegistration" class="links open_modal">
-                <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#entrance"></use>
-                </svg>
-                <span class="links-text">Вход и регистрация</span>
-            </a>
-        </li>
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        <ul class="menu-cabinet">
+            <li>
+                <a href="#modalRegistration" class="links open_modal">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#entrance"></use>
+                    </svg>
+                    <span class="links-text">Вход и регистрация</span>
+                </a>
+            </li>
 
-        <li>
-            <a href="basket.html" class="links links-basket">
-                <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#basket"></use>
-                </svg>
-                <span class="links-text">Корзина</span>
-            </a>
-        </li>
-    </ul>
+            <li>
+                <a href="basket.html" class="links links-basket">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="links-text">Корзина</span>
+                </a>
+            </li>
+        </ul>
 
-    <ul class="menu">
-        <li><a href="catalog.html">Каталог товаров</a></li>
-        <li>
-            <a href="#">
-                <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#search"></use>
-                </svg>
-                Поиск по марке
-            </a>
-        </li>
-        <li><a href="delivery.html">Оплата и доставка</a></li>
-        <li><a href="return.html">Возврат и замена</a></li>
-    </ul>
+        <ul class="menu">
+            <li><a href="catalog.html">Каталог товаров</a></li>
+            <li>
+                <a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#search"></use>
+                    </svg>
+                    Поиск по марке
+                </a>
+            </li>
+            <li><a href="delivery.html">Оплата и доставка</a></li>
+            <li><a href="return.html">Возврат и замена</a></li>
+        </ul>
 
-    <ul class="home-menu">
-        <li><a href="about.html">О компании</a></li>
-        <li><a href="news.html">Новости и статьи</a></li>
-        <li><a href="partners.html">Партнерам</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-    </ul>
+        <ul class="home-menu">
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="news.html">Новости и статьи</a></li>
+            <li><a href="partners.html">Партнерам</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
 
-    <ul class="list-social">
-        <li><a href="#">
-            <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#social-1"></use>
-            </svg>
-        </a></li>
-        <li><a href="#">
-            <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#social-2"></use>
-            </svg>
-        </a></li>
-        <li><a href="#">
-            <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#social-3"></use>
-            </svg>
-        </a></li>
-        <li><a href="#">
-            <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#social-4"></use>
-            </svg>
-        </a></li>
-    </ul>
-</div>
+        <ul class="list-social">
+            <li><a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#social-1"></use>
+                    </svg>
+                </a></li>
+            <li><a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#social-2"></use>
+                    </svg>
+                </a></li>
+            <li><a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#social-3"></use>
+                    </svg>
+                </a></li>
+            <li><a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#social-4"></use>
+                    </svg>
+                </a></li>
+        </ul>
+    </div>
 
-<header>
-    <div class="header-top">
+    <header>
+        <div class="header-top">
+            <div class="container">
+
+                <a href="#modalCity" class="location header-box open_modal links">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#location"></use>
+                    </svg>
+                    <span class="location-text">Москва и Московская…</span>
+                </a>
+
+                <ul class="home-menu">
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="news.html">Новости и статьи</a></li>
+                    <li><a href="partners.html">Партнерам</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+
+                <div class="phone-wrapper">
+                    <a href="tel:+78342271043" class="phone links header-box">
+                        <svg class="phone-icon svg-icon">
+                            <use xlink:href="img/sprite.svg#phone"></use>
+                        </svg>
+                        <span class="links-text">+7 (8342) 27-10-43</span>
+                    </a>
+
+                    <a href="#modalCall" class="links-call links open_modal">Обратный звонок</a>
+                </div>
+
+                <ul class="list-social">
+                    <li><a href="#">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#social-1"></use>
+                            </svg>
+                        </a></li>
+                    <li><a href="#">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#social-2"></use>
+                            </svg>
+                        </a></li>
+                    <li><a href="#">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#social-3"></use>
+                            </svg>
+                        </a></li>
+                    <li><a href="#">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#social-4"></use>
+                            </svg>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+                <ul class="menu">
+                    <li><a href="catalog.html">Каталог товаров</a></li>
+                    <li>
+                        <a href="#">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#search"></use>
+                            </svg>
+                            Поиск по марке
+                        </a>
+                    </li>
+                    <li><a href="delivery.html">Оплата и доставка</a></li>
+                    <li><a href="return.html">Возврат и замена</a></li>
+                </ul>
+
+                <a href="#modalRegistration" class="links open_modal">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#entrance"></use>
+                    </svg>
+                    <span class="links-text">Вход и регистрация</span>
+                </a>
+
+                <a href="basket.html" class="links links-basket">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="links-text">Корзина</span>
+                </a>
+
+                <div class="btn-burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="product">
         <div class="container">
+            <ul class="pagination">
+                <li>
+                    <a href="index.html">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#arrow-left"></use>
+                        </svg>
+                        <span class="links-text">На главную</span>
+                    </a>
+                </li>
+                <li><a href="catalog.html">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#arrow-left"></use>
+                        </svg>
+                        <span class="links-text">В каталог</span>
+                    </a></li>
 
-            <a href="#modalCity" class="location header-box open_modal links">
-                <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#location"></use>
-                </svg>
-                <span class="location-text">Москва и Московская…</span>
-            </a>
-
-            <ul class="home-menu">
-                <li><a href="about.html">О компании</a></li>
-                <li><a href="news.html">Новости и статьи</a></li>
-                <li><a href="partners.html">Партнерам</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="catalog.html">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#arrow-left"></use>
+                        </svg>
+                        <span class="links-text">В группу товаров</span>
+                    </a></li>
             </ul>
 
-            <div class="phone-wrapper">
+            <h1>Коврики резиновые 3D LUX для BMW X5 G05 (2018-)</h1>
+
+            <div class="product-wrapper w-100">
+                <div class="product-photo">
+                    <div class="product-photo__items">
+                        <div class="product-slider-max w-100">
+                            <div class="slide">
+                                <div class="product-slider-max__item">
+                                    <div class="product-slider-max__schema">
+                                        <img src="img/car1.svg" alt="">
+                                    </div>
+                                    <img src="img/prod8.png" alt="" class="photo-max">
+                                </div>
+                            </div>
+
+                            <div class="slide">
+                                <div class="product-slider-max__item">
+                                    <div class="product-slider-max__schema">
+                                        <img src="img/car2.svg" alt="">
+                                    </div>
+                                    <img src="img/prod8.png" alt="" class="photo-max">
+                                </div>
+                            </div>
+
+                            <div class="slide">
+                                <div class="product-slider-max__item">
+                                    <div class="product-slider-max__schema">
+                                        <img src="img/car3.svg" alt="">
+                                    </div>
+                                    <img src="img/prod8.png" alt="" class="photo-max">
+                                </div>
+                            </div>
+
+                            <div class="slide">
+                                <div class="product-slider-max__item">
+                                    <div class="product-slider-max__schema">
+                                        <img src="img/car1.svg" alt="">
+                                    </div>
+                                    <img src="img/prod8.png" alt="" class="photo-max">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-slider-min w-100">
+                            <div class="slide">
+                                <div class="product-slider-min__item"><img src="img/prod8.png" alt=""></div>
+                            </div>
+                            <div class="slide">
+                                <div class="product-slider-min__item"><img src="img/news4.png" alt=""></div>
+                            </div>
+                            <div class="slide">
+                                <div class="product-slider-min__item"><img src="img/prod9.png" alt=""></div>
+                            </div>
+                            <div class="slide">
+                                <div class="product-slider-min__item"><img src="img/prod9.png" alt=""></div>
+                            </div>
+                            <div class="slide">
+                                <div class="product-slider-min__item"><img src="img/prod8.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-information">
+                    <ul class="list-characteristics">
+                        <li>
+                            <p>Артикул:</p>
+                            <span>123456778</span>
+                        </li>
+                        <li>
+                            <p>Материал:</p>
+                            <span>резина</span>
+                        </li>
+                        <li>
+                            <p>Гарантия: </p>
+                            <span>3 года</span>
+                        </li>
+                        <li>
+                            <p>Высота борта:</p>
+                            <span>5 см</span>
+                        </li>
+                    </ul>
+
+                    <div class="price-wrapper">
+                        <div class="new-price">7 000 ₽</div>
+                        <div class="old-price">12 000 ₽</div>
+                    </div>
+
+                    <ul class="list-check">
+                        <li>В наличии</li>
+                        <li>Есть комплект</li>
+                    </ul>
+
+                    <a href="#" class="btn btn-accent add-basket">В корзину</a>
+
+                    <div class="product-info-box">
+                        <h3>Доставка:</h3>
+                        <div class="location header-box">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#location"></use>
+                            </svg>
+                            <div class="location-text">Москва и Московская область</div>
+                        </div>
+                    </div>
+
+                    <div class="product-info-box">
+                        <h4>ПЭК</h4>
+
+                        <div class="product-info-box__line">
+                            <span>Пункт выдачи</span>
+                            <a href="#" class="links-red">Посмотреть ближайший пункт</a>
+                        </div>
+
+                        <div class="box-text">
+                            <p>600 ₽ через 3-7 дней</p>
+                        </div>
+                    </div>
+
+                    <div class="product-info-box">
+                        <h4>Деловые линии</h4>
+
+                        <div class="product-info-box__line">
+                            <span>Пункт выдачи</span>
+                            <a href="#" class="links-red">Посмотреть ближайший пункт</a>
+                        </div>
+
+                        <div class="box-text">
+                            <p>800 ₽ через 3-7 дней</p>
+                        </div>
+                    </div>
+
+                    <div class="product-info-box">
+                        <h4>GTD (КИТ)</h4>
+
+                        <div class="product-info-box__line">
+                            <span>Пункт выдачи</span>
+                            <a href="#" class="links-red">Посмотреть ближайший пункт</a>
+                        </div>
+
+                        <div class="box-text">
+                            <p>1400 ₽ через 7-14 дней</p>
+                        </div>
+                    </div>
+
+                    <div class="product-info-box">
+                        <h4>DPD</h4>
+
+                        <div class="product-info-box__line">
+                            <span>Курьерская доставка до двери</span>
+                        </div>
+
+                        <div class="box-text">
+                            <p>1600 ₽ через 3-7 дней</p>
+                        </div>
+                    </div>
+
+                    <div class="product-info-box">
+                        <h4>Самовывоз (только в Саранске)</h4>
+                        <div class="box-text">
+                            <p>Бесплатно завтра</p>
+                        </div>
+                    </div>
+
+                    <div class="product-info-box product-info-box-delivery">
+                        <h3>Оплата</h3>
+                        <div class="box-text">
+                            <p>Вы можете оплатить товар банковской картой у нас на сайте.</p>
+                        </div>
+                        <div class="img-pay"><img src="img/payment.png" alt=""></div>
+                    </div>
+
+                    <div class="product-info-box product-info-box-delivery">
+                        <h3>Описание товара</h3>
+                        <div class="box-text">
+                            <p>3D LUX SRTK – это коврики с лучшими техническими характеристиками, которые производит
+                                наша компания. При их производстве применяется уретановый каучук, включающий в себя
+                                сложные полиэфиры. За счет этого коврики имеют больший предел гибкости, прочности и
+                                износостойкости. И как следствие — увеличенную гарантию до 3 лет!</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="other-goods">
+        <div class="container">
+            <h2>Другие товары для BMW X5 G05 (2018-) </h2>
+
+            <div class="other-goods-wrapper">
+                <div class="news-card">
+                    <span class="tag bg-green">Новинка</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/news2.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Брызговики резиновые универсальные передние для
+                            BMW X4 (G02) (2018-)</a>
+                        <div class="price-wrapper">
+                            500 ₽
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+                <div class="news-card">
+                    <span class="tag bg-red">Акция</span>
+                    <a href="product.html" class="news-card__img">
+                        <img src="img/news3.png" alt="">
+                    </a>
+
+                    <div class="news-card__body">
+                        <a href="product.html" class="news-card__title">Брызговики резиновые универсальные передние для
+                            BMW X4 (G02) (2018-)</a>
+                        <div class="price-wrapper">
+                            500 ₽
+                        </div>
+                        <ul class="list-check">
+                            <li>В наличии</li>
+                            <li>Есть комплект</li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="btn btn-add-card">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="btn-text">Добавить в корзину</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-clients">
+        <div class="container">
+            <h2>Фотографии наших клиентов</h2>
+
+            <div class="gallery-clients-slider w-100">
+                <div class="slide">
+                    <div class="gallery-clients__box">
+                        <div class="gallery-clients__box-img"><img src="img/photo1.png" alt=""></div>
+                        <div class="gallery-clients__box-body">
+                            <a href="#" class="links-social">@username</a>
+                            <p>Очень качественные коврики! Подошли как родные</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="gallery-clients__box">
+                        <div class="gallery-clients__box-img"><img src="img/photo2.png" alt=""></div>
+                        <div class="gallery-clients__box-body">
+                            <a href="#" class="links-social">@username</a>
+                            <p>Очень качественные коврики! Подошли как родные</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="gallery-clients__box">
+                        <div class="gallery-clients__box-img"><img src="img/photo1.png" alt=""></div>
+                        <div class="gallery-clients__box-body">
+                            <a href="#" class="links-social">@username</a>
+                            <p>Очень качественные коврики! Подошли как родные</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="gallery-clients__box">
+                        <div class="gallery-clients__box-img"><img src="img/photo2.png" alt=""></div>
+                        <div class="gallery-clients__box-body">
+                            <a href="#" class="links-social">@username</a>
+                            <p>Очень качественные коврики! Подошли как родные</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="catalog-wrapper">
+        <div class="container">
+            <div class="catalog-wrapper__content">
+                <h3>Автомобильные резиновые коврики
+                    3D Premium</h3>
+                <div class="box-text">
+                    <p>По форме они идеально вписываются
+                        в салон автомобиля. В продукции СРТК предусмотрено наличие бортиков, благодаря чему салон
+                        надежно
+                        защищен от попадания в него влаги.</p>
+
+                    <p>Кроме того, специальный рисунок поверхности способствует наиболее простому очищению ковриков.
+                        Имеются
+                        и
+                        узоры с внутренней стороны, благодаря которым коврик надежно фиксируется на поверхности.</p>
+                </div>
+            </div>
+
+            <div class="wrapper-row">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="news-card">
+                            <span class="tag bg-green">Новинка</span>
+                            <a href="product.html" class="news-card__img">
+                                <img src="img/news4.png" alt="">
+                            </a>
+
+                            <div class="news-card__body">
+                                <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02)
+                                    (2018-)
+                                    передние</a>
+                                <div class="price-wrapper">
+                                    12 000 ₽
+                                </div>
+                                <ul class="list-check">
+                                    <li>В наличии</li>
+                                    <li>Есть комплект</li>
+                                </ul>
+                            </div>
+
+                            <a href="#" class="btn btn-add-card">
+                                <svg class="svg-icon">
+                                    <use xlink:href="img/sprite.svg#basket"></use>
+                                </svg>
+                                <span class="btn-text">Добавить в корзину</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="news-card">
+                            <span class="tag bg-red">Акция</span>
+                            <a href="product.html" class="news-card__img">
+                                <img src="img/news2.png" alt="">
+                            </a>
+
+                            <div class="news-card__body">
+                                <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02)
+                                    (2018-)
+                                    передние</a>
+                                <div class="price-wrapper">
+                                    <div class="new-price">6 000 ₽</div>
+                                    <div class="old-price">12 000 ₽</div>
+                                </div>
+                                <ul class="list-check">
+                                    <li>В наличии</li>
+                                    <li>Есть комплект</li>
+                                </ul>
+                            </div>
+
+                            <a href="#" class="btn btn-add-card">
+                                <svg class="svg-icon">
+                                    <use xlink:href="img/sprite.svg#basket"></use>
+                                </svg>
+                                <span class="btn-text">Добавить в корзину</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="news-card">
+                            <span class="tag bg-red">Акция</span>
+                            <a href="product.html" class="news-card__img">
+                                <img src="img/news5.png" alt="">
+                            </a>
+
+                            <div class="news-card__body">
+                                <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02)
+                                    (2018-)
+                                    передние</a>
+                                <div class="price-wrapper">
+                                    <div class="new-price">6 000 ₽</div>
+                                    <div class="old-price">12 000 ₽</div>
+                                </div>
+                                <ul class="list-check">
+                                    <li>В наличии</li>
+                                    <li>Есть комплект</li>
+                                </ul>
+                            </div>
+
+                            <a href="#" class="btn btn-add-card">
+                                <svg class="svg-icon">
+                                    <use xlink:href="img/sprite.svg#basket"></use>
+                                </svg>
+                                <span class="btn-text">Добавить в корзину</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-100 line-wrapper">
+                    <a href="category.html" class="btn btn-white">Посмотреть все коврики 3D Premium</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="catalog-wrapper">
+        <div class="container">
+            <div class="catalog-wrapper__content">
+                <h3>Автомобильные резиновые коврики
+                    3D Lux</h3>
+                <div class="box-text">
+                    <p>По форме они идеально вписываются
+                        в салон автомобиля. В продукции СРТК предусмотрено наличие бортиков, благодаря чему салон
+                        надежно
+                        защищен от попадания в него влаги.</p>
+
+                    <p>Кроме того, специальный рисунок поверхности способствует наиболее простому очищению ковриков.
+                        Имеются
+                        и
+                        узоры с внутренней стороны, благодаря которым коврик надежно фиксируется на поверхности.</p>
+                </div>
+            </div>
+
+            <div class="wrapper-row">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="news-card">
+                            <span class="tag bg-green">Новинка</span>
+                            <a href="product.html" class="news-card__img">
+                                <img src="img/news4.png" alt="">
+                            </a>
+
+                            <div class="news-card__body">
+                                <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02)
+                                    (2018-)
+                                    передние</a>
+                                <div class="price-wrapper">
+                                    12 000 ₽
+                                </div>
+                                <ul class="list-check">
+                                    <li>В наличии</li>
+                                    <li>Есть комплект</li>
+                                </ul>
+                            </div>
+
+                            <a href="#" class="btn btn-add-card">
+                                <svg class="svg-icon">
+                                    <use xlink:href="img/sprite.svg#basket"></use>
+                                </svg>
+                                <span class="btn-text">Добавить в корзину</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="news-card">
+                            <span class="tag bg-red">Акция</span>
+                            <a href="product.html" class="news-card__img">
+                                <img src="img/news2.png" alt="">
+                            </a>
+
+                            <div class="news-card__body">
+                                <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02)
+                                    (2018-)
+                                    передние</a>
+                                <div class="price-wrapper">
+                                    <div class="new-price">6 000 ₽</div>
+                                    <div class="old-price">12 000 ₽</div>
+                                </div>
+                                <ul class="list-check">
+                                    <li>В наличии</li>
+                                    <li>Есть комплект</li>
+                                </ul>
+                            </div>
+
+                            <a href="#" class="btn btn-add-card">
+                                <svg class="svg-icon">
+                                    <use xlink:href="img/sprite.svg#basket"></use>
+                                </svg>
+                                <span class="btn-text">Добавить в корзину</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="news-card">
+                            <span class="tag bg-red">Акция</span>
+                            <a href="product.html" class="news-card__img">
+                                <img src="img/news5.png" alt="">
+                            </a>
+
+                            <div class="news-card__body">
+                                <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02)
+                                    (2018-)
+                                    передние</a>
+                                <div class="price-wrapper">
+                                    <div class="new-price">6 000 ₽</div>
+                                    <div class="old-price">12 000 ₽</div>
+                                </div>
+                                <ul class="list-check">
+                                    <li>В наличии</li>
+                                    <li>Есть комплект</li>
+                                </ul>
+                            </div>
+
+                            <a href="#" class="btn btn-add-card">
+                                <svg class="svg-icon">
+                                    <use xlink:href="img/sprite.svg#basket"></use>
+                                </svg>
+                                <span class="btn-text">Добавить в корзину</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-100 line-wrapper">
+                    <a href="category.html" class="btn btn-white">Посмотреть все коврики 3D Lux</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="consultation">
+        <div class="container">
+            <h2>Проконсультируем
+                и поможем подобрать товар</h2>
+
+            <form method="post" class="form">
+                <label><input type="text" placeholder="Ваше имя" name="name"></label>
+                <label><input type="text" placeholder="Номер телефона" name="phone" required></label>
+                <label><input type="text" placeholder="Кратко опишите проблему или ваше пожелание"
+                        name="message"></label>
+
+                <button type="submit" class="btn btn-accent">Заказать консультацию</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-box">
+                <h3>Компания</h3>
+                <ul class="footer-menu">
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="news.html">Новости и статьи</a></li>
+                    <li><a href="partners.html">Партнерам</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="delivery.html">Оплата и доставка</a></li>
+                    <li><a href="return.html">Возврат и замена</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Каталог товаров</h3>
+                <ul class="footer-menu">
+                    <li><a href="category.html">Автомобильные резиновые коврики 3D Standart</a></li>
+                    <li><a href="category.html">Автомобильные резиновые коврики 3D Premium</a></li>
+                    <li><a href="category.html">Автомобильные резиновые коврики 3D Lux</a></li>
+                    <li><a href="category.html">Брызговики и локеры</a></li>
+                    <li><a href="category.html">Поддоны и ковры багажника</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Социальные сети</h3>
+                <ul class="list-social">
+                    <li><a href="#">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#social-2"></use>
+                            </svg>
+                            Drive2
+                        </a></li>
+                    <li><a href="#">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#social-3"></use>
+                            </svg>
+                            Вконтакте
+                        </a></li>
+                    <li><a href="#">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#social-4"></use>
+                            </svg>
+                            Instagram
+                        </a></li>
+                    <li><a href="#">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#social-1"></use>
+                            </svg>
+                            YouTube
+                        </a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
                 <a href="tel:+78342271043" class="phone links header-box">
                     <svg class="phone-icon svg-icon">
                         <use xlink:href="img/sprite.svg#phone"></use>
@@ -123,798 +820,116 @@
                     <span class="links-text">+7 (8342) 27-10-43</span>
                 </a>
 
-                <a href="#modalCall" class="links-call links open_modal">Обратный звонок</a>
-            </div>
+                <a href="#" class="btn btn-white">Заказать обратный звонок</a>
 
-            <ul class="list-social">
-                <li><a href="#">
-                    <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#social-1"></use>
-                    </svg>
-                </a></li>
-                <li><a href="#">
-                    <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#social-2"></use>
-                    </svg>
-                </a></li>
-                <li><a href="#">
-                    <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#social-3"></use>
-                    </svg>
-                </a></li>
-                <li><a href="#">
-                    <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#social-4"></use>
-                    </svg>
-                </a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="header-bottom">
-        <div class="container">
-            <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
-
-            <ul class="menu">
-                <li><a href="catalog.html">Каталог товаров</a></li>
-                <li>
-                    <a href="#">
-                        <svg class="svg-icon">
-                            <use xlink:href="img/sprite.svg#search"></use>
-                        </svg>
-                        Поиск по марке
-                    </a>
-                </li>
-                <li><a href="delivery.html">Оплата и доставка</a></li>
-                <li><a href="return.html">Возврат и замена</a></li>
-            </ul>
-
-            <a href="#modalRegistration" class="links open_modal">
-                <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#entrance"></use>
-                </svg>
-                <span class="links-text">Вход и регистрация</span>
-            </a>
-
-            <a href="basket.html" class="links links-basket">
-                <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#basket"></use>
-                </svg>
-                <span class="links-text">Корзина</span>
-            </a>
-
-            <div class="btn-burger">
-                <span></span>
-                <span></span>
-                <span></span>
+                <a href="#" class="developer"><img src="img/developer.svg" alt=""></a>
             </div>
         </div>
-    </div>
-</header>
+    </footer>
 
-<section class="product">
-    <div class="container">
-        <ul class="pagination">
-            <li>
-                <a href="index.html">
-                    <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#arrow-left"></use>
-                    </svg>
-                    <span class="links-text">На главную</span>
-                </a>
-            </li>
-            <li><a href="catalog.html">
-                <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#arrow-left"></use>
-                </svg>
-                <span class="links-text">В каталог</span>
-            </a></li>
+    <div class="modal__div" id="modalLocation">
+        <div class="modal__wrapper">
+            <h2>Выберите город проживания</h2>
 
-            <li><a href="catalog.html">
-                <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#arrow-left"></use>
-                </svg>
-                <span class="links-text">В группу товаров</span>
-            </a></li>
-        </ul>
+            <form method="post" class="modal-form">
 
-        <h1>Коврики резиновые 3D LUX для BMW X5 G05 (2018-)</h1>
-
-        <div class="product-wrapper w-100">
-            <div class="product-photo">
-                <div class="product-slider-max w-100">
-                    <div class="slide">
-                        <div class="product-slider-max__item">
-                            <div class="product-slider-max__schema">
-                                <img src="img/car1.svg" alt="">
-                            </div>
-                            <img src="img/prod8.png" alt="" class="photo-max">
-                        </div>
-                    </div>
-
-                    <div class="slide">
-                        <div class="product-slider-max__item">
-                            <div class="product-slider-max__schema">
-                                <img src="img/car2.svg" alt="">
-                            </div>
-                            <img src="img/prod8.png" alt="" class="photo-max">
-                        </div>
-                    </div>
-
-                    <div class="slide">
-                        <div class="product-slider-max__item">
-                            <div class="product-slider-max__schema">
-                                <img src="img/car3.svg" alt="">
-                            </div>
-                            <img src="img/prod8.png" alt="" class="photo-max">
-                        </div>
-                    </div>
-
-                    <div class="slide">
-                        <div class="product-slider-max__item">
-                            <div class="product-slider-max__schema">
-                                <img src="img/car1.svg" alt="">
-                            </div>
-                            <img src="img/prod8.png" alt="" class="photo-max">
-                        </div>
-                    </div>
-                </div>
-                <div class="product-slider-min w-100">
-                    <div class="slide">
-                        <div class="product-slider-min__item"><img src="img/prod8.png" alt=""></div>
-                    </div>
-                    <div class="slide">
-                        <div class="product-slider-min__item"><img src="img/news4.png" alt=""></div>
-                    </div>
-                    <div class="slide">
-                        <div class="product-slider-min__item"><img src="img/prod9.png" alt=""></div>
-                    </div>
-                    <div class="slide">
-                        <div class="product-slider-min__item"><img src="img/prod9.png" alt=""></div>
-                    </div>
-                    <div class="slide">
-                        <div class="product-slider-min__item"><img src="img/prod8.png" alt=""></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-information">
-                <ul class="list-characteristics">
-                    <li>
-                        <p>Артикул:</p>
-                        <span>123456778</span>
-                    </li>
-                    <li>
-                        <p>Материал:</p>
-                        <span>резина</span>
-                    </li>
-                    <li>
-                        <p>Гарантия: </p>
-                        <span>3 года</span>
-                    </li>
-                    <li>
-                        <p>Высота борта:</p>
-                        <span>5 см</span>
-                    </li>
+                <ul class="list-city">
+                    <li><a href="#">Москва</a></li>
+                    <li><a href="#">Саранск</a></li>
+                    <li><a href="#">Другое</a></li>
                 </ul>
 
-                <div class="price-wrapper">
-                    <div class="new-price">7 000 ₽</div>
-                    <div class="old-price">12 000 ₽</div>
-                </div>
+                <button type="submit" class="btn btn-accent">Выбрать</button>
+            </form>
+        </div>
+    </div>
 
-                <ul class="list-check">
-                    <li>В наличии</li>
-                    <li>Есть комплект</li>
+    <div class="modal__div" id="modalCity">
+        <div class="modal__wrapper">
+            <h2>Выберите город проживания</h2>
+
+            <form method="post" class="modal-form">
+                <ul class="list-city">
+                    <li><a href="#">Москва</a></li>
+                    <li><a href="#">Саранск</a></li>
+                    <li><a href="#">Другое</a></li>
                 </ul>
 
-                <a href="#" class="btn btn-accent add-basket">В корзину</a>
+                <button type="submit" class="btn btn-accent">Выбрать</button>
+            </form>
+        </div>
+    </div>
 
-                <div class="product-info-box">
-                    <h3>Доставка:</h3>
-                    <div class="location header-box">
-                        <svg class="svg-icon">
-                            <use xlink:href="img/sprite.svg#location"></use>
-                        </svg>
-                        <div class="location-text">Москва и Московская область</div>
-                    </div>
+    <div class="modal__div" id="modalCall">
+        <div class="modal__wrapper">
+            <h2>Заказ обратного звонка</h2>
+
+            <form method="post" class="modal-form">
+                <label><input type="text" placeholder="Ваше имя" name="name"></label>
+                <label><input type="text" placeholder="Номер телефона" name="phone" required></label>
+                <label><input type="text" placeholder="Кратко опишите проблему или ваше пожелание"
+                        name="message"></label>
+
+                <button type="submit" class="btn btn-accent">Заказать</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal__div" id="modalRegistration">
+        <div class="modal__wrapper">
+            <div class="tabs">
+                <ul class="tabs__caption">
+                    <li class="active">Вход</li>
+                    <li>Регистрация</li>
+                </ul>
+
+                <div class="tabs__content active">
+                    <form method="post" class="modal-form">
+                        <label><input type="text" placeholder="Электронная почта" name="mail" required></label>
+                        <label><input type="text" placeholder="Пароль" name="password" required></label>
+                        <a href="#" class="links-black">Забыли пароль?</a>
+
+                        <button type="submit" class="btn btn-accent">Войти</button>
+                    </form>
                 </div>
+                <div class="tabs__content">
+                    <form method="post" class="modal-form">
+                        <label><input type="text" placeholder="Ваше имя" name="name"></label>
+                        <label><input type="text" placeholder="Номер телефона" name="phone" required></label>
+                        <label><input type="text" placeholder="Электронная почта" name="mail" required></label>
+                        <label><input type="text" placeholder="Пароль" name="password" required></label>
 
-                <div class="product-info-box">
-                    <h4>ПЭК</h4>
-
-                    <div class="product-info-box__line">
-                        <span>Пункт выдачи</span>
-                        <a href="#" class="links-red">Посмотреть ближайший пункт</a>
-                    </div>
-
-                    <div class="box-text">
-                        <p>600 ₽ через 3-7 дней</p>
-                    </div>
-                </div>
-
-                <div class="product-info-box">
-                    <h4>Деловые линии</h4>
-
-                    <div class="product-info-box__line">
-                        <span>Пункт выдачи</span>
-                        <a href="#" class="links-red">Посмотреть ближайший пункт</a>
-                    </div>
-
-                    <div class="box-text">
-                        <p>800 ₽ через 3-7 дней</p>
-                    </div>
-                </div>
-
-                <div class="product-info-box">
-                    <h4>GTD (КИТ)</h4>
-
-                    <div class="product-info-box__line">
-                        <span>Пункт выдачи</span>
-                        <a href="#" class="links-red">Посмотреть ближайший пункт</a>
-                    </div>
-
-                    <div class="box-text">
-                        <p>1400 ₽ через 7-14 дней</p>
-                    </div>
-                </div>
-
-                <div class="product-info-box">
-                    <h4>DPD</h4>
-
-                    <div class="product-info-box__line">
-                        <span>Курьерская доставка до двери</span>
-                    </div>
-
-                    <div class="box-text">
-                        <p>1600 ₽ через 3-7 дней</p>
-                    </div>
-                </div>
-
-                <div class="product-info-box">
-                    <h4>Самовывоз (только в Саранске)</h4>
-                    <div class="box-text">
-                        <p>Бесплатно завтра</p>
-                    </div>
-                </div>
-
-                <div class="product-info-box product-info-box-delivery">
-                    <h3>Оплата</h3>
-                    <div class="box-text">
-                        <p>Вы можете оплатить товар банковской картой у нас на сайте.</p>
-                    </div>
-                    <div class="img-pay"><img src="img/payment.png" alt=""></div>
-                </div>
-
-                <div class="product-info-box product-info-box-delivery">
-                    <h3>Описание товара</h3>
-                    <div class="box-text">
-                        <p>3D LUX SRTK – это коврики с лучшими техническими характеристиками, которые производит наша компания. При их производстве применяется уретановый каучук, включающий в себя сложные полиэфиры. За счет этого коврики имеют больший предел гибкости, прочности и износостойкости. И как следствие — увеличенную гарантию до 3 лет!</p>
-                    </div>
+                        <button type="submit" class="btn btn-accent">Зарегистрироваться</button>
+                    </form>
                 </div>
             </div>
 
         </div>
     </div>
-</section>
 
-<section class="other-goods">
-    <div class="container">
-        <h2>Другие товары для BMW X5 G05 (2018-) </h2>
+    <div class="modal__div" id="modalCard">
+        <div class="modal__wrapper">
+            <h2>Товар в корзине!</h2>
 
-        <div class="other-goods-wrapper">
-            <div class="news-card">
-                <span class="tag bg-green">Новинка</span>
-                <a href="product.html" class="news-card__img">
-                    <img src="img/news2.png" alt="">
-                </a>
-
-                <div class="news-card__body">
-                    <a href="product.html" class="news-card__title">Брызговики резиновые универсальные передние для BMW X4 (G02) (2018-)</a>
-                    <div class="price-wrapper">
-                        500 ₽
-                    </div>
-                    <ul class="list-check">
-                        <li>В наличии</li>
-                        <li>Есть комплект</li>
-                    </ul>
-                </div>
-
-                <a href="#" class="btn btn-add-card">
-                    <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#basket"></use>
-                    </svg>
-                    <span class="btn-text">Добавить в корзину</span>
-                </a>
-            </div>
-            <div class="news-card">
-                <span class="tag bg-red">Акция</span>
-                <a href="product.html" class="news-card__img">
-                    <img src="img/news3.png" alt="">
-                </a>
-
-                <div class="news-card__body">
-                    <a href="product.html" class="news-card__title">Брызговики резиновые универсальные передние для BMW X4 (G02) (2018-)</a>
-                    <div class="price-wrapper">
-                        500 ₽
-                    </div>
-                    <ul class="list-check">
-                        <li>В наличии</li>
-                        <li>Есть комплект</li>
-                    </ul>
-                </div>
-
-                <a href="#" class="btn btn-add-card">
-                    <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#basket"></use>
-                    </svg>
-                    <span class="btn-text">Добавить в корзину</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="gallery-clients">
-    <div class="container">
-        <h2>Фотографии наших клиентов</h2>
-
-        <div class="gallery-clients-slider w-100">
-            <div class="slide">
-                <div class="gallery-clients__box">
-                    <div class="gallery-clients__box-img"><img src="img/photo1.png" alt=""></div>
-                    <div class="gallery-clients__box-body">
-                        <a href="#" class="links-social">@username</a>
-                        <p>Очень качественные коврики! Подошли как родные</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="slide">
-                <div class="gallery-clients__box">
-                    <div class="gallery-clients__box-img"><img src="img/photo2.png" alt=""></div>
-                    <div class="gallery-clients__box-body">
-                        <a href="#" class="links-social">@username</a>
-                        <p>Очень качественные коврики! Подошли как родные</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="slide">
-                <div class="gallery-clients__box">
-                    <div class="gallery-clients__box-img"><img src="img/photo1.png" alt=""></div>
-                    <div class="gallery-clients__box-body">
-                        <a href="#" class="links-social">@username</a>
-                        <p>Очень качественные коврики! Подошли как родные</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="slide">
-                <div class="gallery-clients__box">
-                    <div class="gallery-clients__box-img"><img src="img/photo2.png" alt=""></div>
-                    <div class="gallery-clients__box-body">
-                        <a href="#" class="links-social">@username</a>
-                        <p>Очень качественные коврики! Подошли как родные</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<div class="catalog-wrapper">
-    <div class="container">
-        <div class="catalog-wrapper__content">
-            <h3>Автомобильные резиновые коврики
-                3D Premium</h3>
             <div class="box-text">
-                <p>По форме они идеально вписываются
-                    в салон автомобиля. В продукции СРТК предусмотрено наличие бортиков, благодаря чему салон надежно
-                    защищен от попадания в него влаги.</p>
-
-                <p>Кроме того, специальный рисунок поверхности способствует наиболее простому очищению ковриков. Имеются
-                    и
-                    узоры с внутренней стороны, благодаря которым коврик надежно фиксируется на поверхности.</p>
-            </div>
-        </div>
-
-        <div class="wrapper-row">
-            <div class="row">
-                <div class="col-3">
-                    <div class="news-card">
-                        <span class="tag bg-green">Новинка</span>
-                        <a href="product.html" class="news-card__img">
-                            <img src="img/news4.png" alt="">
-                        </a>
-
-                        <div class="news-card__body">
-                            <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02)
-                                (2018-)
-                                передние</a>
-                            <div class="price-wrapper">
-                                12 000 ₽
-                            </div>
-                            <ul class="list-check">
-                                <li>В наличии</li>
-                                <li>Есть комплект</li>
-                            </ul>
-                        </div>
-
-                        <a href="#" class="btn btn-add-card">
-                            <svg class="svg-icon">
-                                <use xlink:href="img/sprite.svg#basket"></use>
-                            </svg>
-                            <span class="btn-text">Добавить в корзину</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="news-card">
-                        <span class="tag bg-red">Акция</span>
-                        <a href="product.html" class="news-card__img">
-                            <img src="img/news2.png" alt="">
-                        </a>
-
-                        <div class="news-card__body">
-                            <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02)
-                                (2018-)
-                                передние</a>
-                            <div class="price-wrapper">
-                                <div class="new-price">6 000 ₽</div>
-                                <div class="old-price">12 000 ₽</div>
-                            </div>
-                            <ul class="list-check">
-                                <li>В наличии</li>
-                                <li>Есть комплект</li>
-                            </ul>
-                        </div>
-
-                        <a href="#" class="btn btn-add-card">
-                            <svg class="svg-icon">
-                                <use xlink:href="img/sprite.svg#basket"></use>
-                            </svg>
-                            <span class="btn-text">Добавить в корзину</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="news-card">
-                        <span class="tag bg-red">Акция</span>
-                        <a href="product.html" class="news-card__img">
-                            <img src="img/news5.png" alt="">
-                        </a>
-
-                        <div class="news-card__body">
-                            <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02)
-                                (2018-)
-                                передние</a>
-                            <div class="price-wrapper">
-                                <div class="new-price">6 000 ₽</div>
-                                <div class="old-price">12 000 ₽</div>
-                            </div>
-                            <ul class="list-check">
-                                <li>В наличии</li>
-                                <li>Есть комплект</li>
-                            </ul>
-                        </div>
-
-                        <a href="#" class="btn btn-add-card">
-                            <svg class="svg-icon">
-                                <use xlink:href="img/sprite.svg#basket"></use>
-                            </svg>
-                            <span class="btn-text">Добавить в корзину</span>
-                        </a>
-                    </div>
-                </div>
+                <p>В корзине "Коврики реиновые 3D LUX для BMW X4 (G02) (2018-) передние". Хотите продолжить покупки или
+                    перейти к оплате</p>
             </div>
 
-            <div class="w-100 line-wrapper">
-                <a href="category.html" class="btn btn-white">Посмотреть все коврики 3D Premium</a>
+            <div class="line-wrapper">
+                <a href="basket.html" class="btn btn-accent">Перейти к оплате</a>
+                <button type="button" class="btn btn-modal">Продолжить выбор</button>
             </div>
         </div>
     </div>
-</div>
 
-<div class="catalog-wrapper">
-    <div class="container">
-        <div class="catalog-wrapper__content">
-            <h3>Автомобильные резиновые коврики
-                3D Lux</h3>
-            <div class="box-text">
-                <p>По форме они идеально вписываются
-                    в салон автомобиля. В продукции СРТК предусмотрено наличие бортиков, благодаря чему салон надежно
-                    защищен от попадания в него влаги.</p>
+    <div class="overlay"></div><!-- Пoдлoжкa -->
 
-                <p>Кроме того, специальный рисунок поверхности способствует наиболее простому очищению ковриков. Имеются
-                    и
-                    узоры с внутренней стороны, благодаря которым коврик надежно фиксируется на поверхности.</p>
-            </div>
-        </div>
-
-        <div class="wrapper-row">
-            <div class="row">
-                <div class="col-3">
-                    <div class="news-card">
-                        <span class="tag bg-green">Новинка</span>
-                        <a href="product.html" class="news-card__img">
-                            <img src="img/news4.png" alt="">
-                        </a>
-
-                        <div class="news-card__body">
-                            <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02)
-                                (2018-)
-                                передние</a>
-                            <div class="price-wrapper">
-                                12 000 ₽
-                            </div>
-                            <ul class="list-check">
-                                <li>В наличии</li>
-                                <li>Есть комплект</li>
-                            </ul>
-                        </div>
-
-                        <a href="#" class="btn btn-add-card">
-                            <svg class="svg-icon">
-                                <use xlink:href="img/sprite.svg#basket"></use>
-                            </svg>
-                            <span class="btn-text">Добавить в корзину</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="news-card">
-                        <span class="tag bg-red">Акция</span>
-                        <a href="product.html" class="news-card__img">
-                            <img src="img/news2.png" alt="">
-                        </a>
-
-                        <div class="news-card__body">
-                            <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02)
-                                (2018-)
-                                передние</a>
-                            <div class="price-wrapper">
-                                <div class="new-price">6 000 ₽</div>
-                                <div class="old-price">12 000 ₽</div>
-                            </div>
-                            <ul class="list-check">
-                                <li>В наличии</li>
-                                <li>Есть комплект</li>
-                            </ul>
-                        </div>
-
-                        <a href="#" class="btn btn-add-card">
-                            <svg class="svg-icon">
-                                <use xlink:href="img/sprite.svg#basket"></use>
-                            </svg>
-                            <span class="btn-text">Добавить в корзину</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="news-card">
-                        <span class="tag bg-red">Акция</span>
-                        <a href="product.html" class="news-card__img">
-                            <img src="img/news5.png" alt="">
-                        </a>
-
-                        <div class="news-card__body">
-                            <a href="product.html" class="news-card__title">Коврики реиновые 3D LUX для BMW X4 (G02)
-                                (2018-)
-                                передние</a>
-                            <div class="price-wrapper">
-                                <div class="new-price">6 000 ₽</div>
-                                <div class="old-price">12 000 ₽</div>
-                            </div>
-                            <ul class="list-check">
-                                <li>В наличии</li>
-                                <li>Есть комплект</li>
-                            </ul>
-                        </div>
-
-                        <a href="#" class="btn btn-add-card">
-                            <svg class="svg-icon">
-                                <use xlink:href="img/sprite.svg#basket"></use>
-                            </svg>
-                            <span class="btn-text">Добавить в корзину</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w-100 line-wrapper">
-                <a href="category.html" class="btn btn-white">Посмотреть все коврики 3D Lux</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<section class="consultation">
-    <div class="container">
-        <h2>Проконсультируем
-            и поможем подобрать товар</h2>
-
-        <form method="post" class="form">
-            <label><input type="text" placeholder="Ваше имя" name="name"></label>
-            <label><input type="text" placeholder="Номер телефона" name="phone" required></label>
-            <label><input type="text" placeholder="Кратко опишите проблему или ваше пожелание" name="message"></label>
-
-            <button type="submit" class="btn btn-accent">Заказать консультацию</button>
-        </form>
-    </div>
-</section>
-
-<footer>
-    <div class="container">
-        <div class="footer-box">
-            <h3>Компания</h3>
-            <ul class="footer-menu">
-                <li><a href="about.html">О компании</a></li>
-                <li><a href="news.html">Новости и статьи</a></li>
-                <li><a href="partners.html">Партнерам</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-                <li><a href="delivery.html">Оплата и доставка</a></li>
-                <li><a href="return.html">Возврат и замена</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-box">
-            <h3>Каталог товаров</h3>
-            <ul class="footer-menu">
-                <li><a href="category.html">Автомобильные резиновые коврики 3D Standart</a></li>
-                <li><a href="category.html">Автомобильные резиновые коврики 3D Premium</a></li>
-                <li><a href="category.html">Автомобильные резиновые коврики 3D Lux</a></li>
-                <li><a href="category.html">Брызговики и локеры</a></li>
-                <li><a href="category.html">Поддоны и ковры багажника</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-box">
-            <h3>Социальные сети</h3>
-            <ul class="list-social">
-                <li><a href="#">
-                    <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#social-2"></use>
-                    </svg>
-                    Drive2
-                </a></li>
-                <li><a href="#">
-                    <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#social-3"></use>
-                    </svg>
-                    Вконтакте
-                </a></li>
-                <li><a href="#">
-                    <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#social-4"></use>
-                    </svg>
-                    Instagram
-                </a></li>
-                <li><a href="#">
-                    <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#social-1"></use>
-                    </svg>
-                    YouTube
-                </a></li>
-            </ul>
-        </div>
-        <div class="footer-box">
-            <a href="tel:+78342271043" class="phone links header-box">
-                <svg class="phone-icon svg-icon">
-                    <use xlink:href="img/sprite.svg#phone"></use>
-                </svg>
-                <span class="links-text">+7 (8342) 27-10-43</span>
-            </a>
-
-            <a href="#" class="btn btn-white">Заказать обратный звонок</a>
-
-            <a href="#" class="developer"><img src="img/developer.svg" alt=""></a>
-        </div>
-    </div>
-</footer>
-
-<div class="modal__div" id="modalLocation">
-    <div class="modal__wrapper">
-        <h2>Выберите город проживания</h2>
-
-        <form method="post" class="modal-form">
-
-            <ul class="list-city">
-                <li><a href="#">Москва</a></li>
-                <li><a href="#">Саранск</a></li>
-                <li><a href="#">Другое</a></li>
-            </ul>
-
-            <button type="submit" class="btn btn-accent">Выбрать</button>
-        </form>
-    </div>
-</div>
-
-<div class="modal__div" id="modalCity">
-    <div class="modal__wrapper">
-        <h2>Выберите город проживания</h2>
-
-        <form method="post" class="modal-form">
-            <ul class="list-city">
-                <li><a href="#">Москва</a></li>
-                <li><a href="#">Саранск</a></li>
-                <li><a href="#">Другое</a></li>
-            </ul>
-
-            <button type="submit" class="btn btn-accent">Выбрать</button>
-        </form>
-    </div>
-</div>
-
-<div class="modal__div" id="modalCall">
-    <div class="modal__wrapper">
-        <h2>Заказ обратного звонка</h2>
-
-        <form method="post" class="modal-form">
-            <label><input type="text" placeholder="Ваше имя" name="name"></label>
-            <label><input type="text" placeholder="Номер телефона" name="phone" required></label>
-            <label><input type="text" placeholder="Кратко опишите проблему или ваше пожелание" name="message"></label>
-
-            <button type="submit" class="btn btn-accent">Заказать</button>
-        </form>
-    </div>
-</div>
-
-<div class="modal__div" id="modalRegistration">
-    <div class="modal__wrapper">
-        <div class="tabs">
-            <ul class="tabs__caption">
-                <li class="active">Вход</li>
-                <li>Регистрация</li>
-            </ul>
-
-            <div class="tabs__content active">
-                <form method="post" class="modal-form">
-                    <label><input type="text" placeholder="Электронная почта" name="mail" required></label>
-                    <label><input type="text" placeholder="Пароль" name="password" required></label>
-                    <a href="#" class="links-black">Забыли пароль?</a>
-
-                    <button type="submit" class="btn btn-accent">Войти</button>
-                </form>
-            </div>
-            <div class="tabs__content">
-                <form method="post" class="modal-form">
-                    <label><input type="text" placeholder="Ваше имя" name="name"></label>
-                    <label><input type="text" placeholder="Номер телефона" name="phone" required></label>
-                    <label><input type="text" placeholder="Электронная почта" name="mail" required></label>
-                    <label><input type="text" placeholder="Пароль" name="password" required></label>
-
-                    <button type="submit" class="btn btn-accent">Зарегистрироваться</button>
-                </form>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<div class="modal__div" id="modalCard">
-    <div class="modal__wrapper">
-        <h2>Товар в корзине!</h2>
-
-        <div class="box-text">
-            <p>В корзине "Коврики реиновые 3D LUX для BMW X4 (G02) (2018-) передние". Хотите продолжить покупки или перейти к оплате</p>
-        </div>
-
-        <div class="line-wrapper">
-            <a href="basket.html" class="btn btn-accent">Перейти к оплате</a>
-            <button type="button" class="btn btn-modal">Продолжить выбор</button>
-        </div>
-    </div>
-</div>
-
-<div class="overlay"></div><!-- Пoдлoжкa -->
-
-<script src="js/jquery.min.js"></script>
-<script src="js/libs.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-<script src="js/common.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/common.js"></script>
 
 </body>
 
