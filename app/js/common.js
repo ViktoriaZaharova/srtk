@@ -1,7 +1,7 @@
 $('.list-mark').slick({
     slidesToShow: 11,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1000,
     responsive: [
         {
             breakpoint: 1070,
